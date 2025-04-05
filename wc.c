@@ -6,9 +6,9 @@
 char isSpace(int ch);
 
 int main() {
-    int lc = 0;
-    int wc = 0;
-    int sc = 0;
+    int lc, wc, sc;
+    lc = wc = sc = 0;
+
     char state = OUT;
 
     int ch;
@@ -17,6 +17,7 @@ int main() {
 
         if (ch == '\n') {
             lc++;
+            state = OUT;
         } else if (isSpace(ch)) {
             state = OUT;
         } else {
