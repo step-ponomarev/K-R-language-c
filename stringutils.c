@@ -45,3 +45,20 @@ void copyWithSize(char *from, char to[], int size) {
 char isSymbol(int ch) {
     return ch > 32;
 }
+
+void reverse(char str[]) {
+    int end = 0;
+    while (str[end] != '\n' && str[end] != '\0') {
+        end++;
+    }
+
+    end--;
+    int start = 0;
+    while (start < end) {
+        char tmp = str[end];
+        str[end] = str[start];
+        str[start] = tmp;
+        start++;
+        end--;
+    }
+}
