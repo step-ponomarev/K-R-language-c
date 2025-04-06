@@ -4,5 +4,6 @@
 void copyWithSize(char from[], char to[], int size);
 void expandArray(char **arr, int currSize, int newSize);
 int getlineImpl(char **line);
+char isSymbol(int ch);
 
 #endif

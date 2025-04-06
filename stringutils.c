@@ -41,3 +41,7 @@ void copyWithSize(char *from, char to[], int size) {
         to[i] = from[i];
     }
 }
+
+char isSymbol(int ch) {
+    return ch > 32;
+}
