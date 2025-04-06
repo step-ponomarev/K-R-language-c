@@ -3,9 +3,9 @@
 
 #define INIT_LEN 10
 
-void copy(char from[], char to[]);
 void copyWithSize(char from[], char to[], int size);
-int getlineImpl(char ** line);
+void expandArray(char **arr, int currSize, int newSize);
+int getlineImpl(char **line);
 
 int main() {
     char *currLine = NULL;
@@ -13,15 +13,16 @@ int main() {
 
     int maxLen;
     char *maxLine = NULL;
-    
 
     while((currLen = getlineImpl(&currLine)) > 0) {
-        if (currLen > maxLen) {
-            free(maxLine);
+        if (currLen < maxLen) {
+            free(currLine);
+        } else {
             maxLine = currLine;
             maxLen = currLen;
-            currLine = NULL;
         }
+
+        currLine = NULL;
     }
 
     if (maxLine != NULL) {
@@ -31,7 +32,7 @@ int main() {
     return 0;
 }
 
-int getlineImpl(char ** line) {
+int getlineImpl(char **line) {
     int maxLen = INIT_LEN;
     char * chArr = malloc(sizeof(char) * maxLen);
     int i = 0;
@@ -40,10 +41,7 @@ int getlineImpl(char ** line) {
     while (((ch = getchar()) != EOF) && (ch != '\n')) {
         if (i == maxLen - 2) {
             maxLen += maxLen;
-            char * tmp = malloc(sizeof(char) * maxLen);
-            copyWithSize(chArr, tmp, i);
-            free(chArr);
-            chArr = tmp;
+            expandArray(&chArr, i, maxLen);
         }
 
         chArr[i++] = ch;
@@ -60,15 +58,15 @@ int getlineImpl(char ** line) {
     return i;
 }
 
-void copyWithSize(char from[], char to[], int size) {
-    for (int i = 0; i < size; i++) {
-        to[i] = from[i];
-    }
+void expandArray(char **arr, int currSize, int newSize) {
+    char * tmp = malloc(newSize);
+    copyWithSize(*arr, tmp, currSize);
+    free(*arr);
+    *arr = tmp;
 }
 
-void copy(char from[], char to[]) {
-    int i = 0;
-    while((to[i] = from[i]) != '\0') {
-        i++;
+void copyWithSize(char *from, char to[], int size) {
+    for (int i = 0; i < size; i++) {
+        to[i] = from[i];
     }
 }
