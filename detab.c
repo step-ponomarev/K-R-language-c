@@ -36,10 +36,6 @@ char* detab(char* line) {
         return line;
     }
 
-    //as\t\0 i=6 len = 3
-    //as\t i = 5 len = 2
-    //as i = 1 len = 1;
-
     int newLen = len + (tabCount * TAB_LEN) - tabCount;
     char* detabedLine = malloc(sizeof(char) * newLen);
     
