@@ -9,7 +9,7 @@ int main() {
     int maxLen;
     char *maxLine = NULL;
 
-    while((currLen = getlineImpl(&currLine)) > 0) {
+    while((currLen = readline(&currLine)) > 0) {
         if (currLen < maxLen) {
             free(currLine);
         } else {

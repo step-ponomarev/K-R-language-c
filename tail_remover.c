@@ -6,7 +6,7 @@ int main() {
     char *currLine = NULL;
     int currLen;
 
-    while((currLen = getlineImpl(&currLine)) > 0) {
+    while((currLen = readline(&currLine)) > 0) {
         for (int i = currLen - 2; i >= 0; i--) {
             if ((i > 0) && !isSymbol(currLine[i])) {
                 continue;

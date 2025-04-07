@@ -8,7 +8,7 @@ int main() {
     int len = 0;
     char* line = NULL;
     
-    while ((len = getlineImpl(&line)) > 0) {
+    while ((len = readline(&line)) > 0) {
         if (len <= MAX_LEN) {
             printf("%s", line);
             free(line);

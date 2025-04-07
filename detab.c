@@ -10,7 +10,7 @@ int main() {
     char * line = NULL;
     int len = 0;
 
-    while ((len = getlineImpl(&line)) > 0) {
+    while ((len = readline(&line)) > 0) {
         char * detabedLine = detab(line);
         printf("%s", detabedLine);
         if (line != detabedLine) {

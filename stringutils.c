@@ -3,7 +3,7 @@
 #include <stdlib.h> 
 #define INIT_LEN 10
 
-int getlineImpl(char **line) {
+int readline(char **line) {
     int maxLen = INIT_LEN;
     char * chArr = malloc(sizeof(char) * maxLen);
     int i = 0;
