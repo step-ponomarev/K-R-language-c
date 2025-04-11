@@ -1,5 +1,5 @@
 #include "stdio.h"
-#include "stringutils.h"
+#include "lib/stringutils.h"
 #include "stdlib.h"
 
 #define START_COMMENT '/'
