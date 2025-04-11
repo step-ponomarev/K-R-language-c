@@ -3,11 +3,11 @@
 
 struct String {
     char * str;
-    int len;
+    int length;
     void * ref;
 };
 
-struct String* toString(char * ch);
-void destroy(struct String* string);
+struct String* createString(char * ch);
+void destroyString(struct String* string);
 
 #endif

@@ -1,7 +1,7 @@
 #include "string.h"
 #include "stdlib.h"
 
-struct String* toString(char * ch) {
+struct String* createString(char * ch) {
     int len = 0;
     while (ch[len] != '\0') {
         len++;
@@ -14,13 +14,13 @@ struct String* toString(char * ch) {
 
     struct String* string = (struct String*) malloc(sizeof(struct String));
     string->str = str;
-    string->len = len;
+    string->length = len;
     string->ref = string;
 
     return string;
 }
 
-void destroy(struct String* string) {
+void destroyString(struct String* string) {
     free(string->str);
     free(string->ref);
 }
