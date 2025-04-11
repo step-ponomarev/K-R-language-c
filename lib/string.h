@@ -4,10 +4,9 @@
 struct String {
     char * str;
     int length;
-    void * ref;
 };
 
-struct String* createString(char * ch);
-void destroyString(struct String* string);
+struct String createString(char * ch);
+void destroyString(struct String string);
 
 #endif
