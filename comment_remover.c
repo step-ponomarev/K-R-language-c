@@ -1,5 +1,5 @@
+#include "lib/iolib.h"
 #include "stdio.h"
-#include "lib/stringutils.h"
 #include "stdlib.h"
 
 #define START_COMMENT '/'
@@ -54,16 +54,16 @@ int main() {
     }
 
     res[curr++] = '\0';
-    printf("\n%s", res);
+    printf("%s", res);
 
     return 0;
 }
 
 
 void handleSingleLineComment() {
-    char* line = NULL;
-    readline(&line);
-    free(line);
+    destroyString(
+        readline()
+    );
 }
 
 void handleMultilineComment() {
