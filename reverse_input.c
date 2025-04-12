@@ -1,4 +1,4 @@
-#include "stringutils.h"
+#include "lib/stringutils.h"
 #include "stdio.h"
 
 int main() {

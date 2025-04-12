@@ -6,7 +6,13 @@ struct String {
     int length;
 };
 
-struct String createString(char * ch);
-void destroyString(struct String string);
+struct String createString(char*);
+void destroyString(struct String);
+struct String trim(struct String);
+
+/*
+string from to,
+ */
+struct String substring(struct String, int, int);
 
 #endif

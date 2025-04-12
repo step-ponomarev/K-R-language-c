@@ -12,7 +12,7 @@ struct StringBuilder {
 struct StringBuilder createStringBuilder();
 void destroyStringBuilder(struct StringBuilder builder);
 
-struct StringBuilder append(struct StringBuilder builder, struct String string);
+void append(struct StringBuilder* builder, struct String string);
 struct String stringBuilderToString(struct StringBuilder builder);
 
 #endif

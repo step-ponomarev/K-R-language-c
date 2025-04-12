@@ -19,43 +19,28 @@ void destroyStringBuilder(struct StringBuilder builder) {
     free(builder.string);
 }
 
-struct StringBuilder append(struct StringBuilder builder, struct String string) {
-    if (builder.capacity <= builder.length + string.length) {
-        while (builder.capacity <= builder.length + string.length) {
-            builder.capacity = (int) (builder.capacity * EXPAND_COEF);
+void append(struct StringBuilder* builder, struct String string) {
+    if (builder->capacity <= builder->length + string.length) {
+        while (builder->capacity <= builder->length + string.length) {
+            builder->capacity = (int) (builder->capacity * EXPAND_COEF);
         }
 
-        char* prevString =  builder.string;
-        builder.string = (char*) malloc(sizeof(char) * builder.capacity);
-        for (int i = 0; i < builder.length; i++) {
-            builder.string[i] = prevString[i];
+        char* prevString =  builder->string;
+        builder->string = (char*) malloc(sizeof(char) * builder->capacity);
+        for (int i = 0; i < builder->length; i++) {
+            builder->string[i] = prevString[i];
         }
-        builder.string[builder.length] = '\0';      
+        builder->string[builder->length] = '\0';      
 
         free(prevString);
     }
 
     for (int i = 0; i < string.length; i++) {
-        builder.string[builder.length++] = string.str[i];
+        builder->string[builder->length++] = string.str[i];
     }
-    builder.string[builder.length] = '\0';
-
-    return builder;
+    builder->string[builder->length] = '\0';
 }
 
 struct String stringBuilderToString(struct StringBuilder builder) {
     return createString(builder.string);
-}
-
-int main() {
-    struct StringBuilder builder = createStringBuilder();
-
-    for (int i = 0; i < 3; i++) {
-        builder = append(builder, createString("as"));
-    }
-
-    printf("%s\n", stringBuilderToString(builder).str);
-    destroyStringBuilder(builder);
-
-    return 0;
 }
