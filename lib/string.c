@@ -80,3 +80,20 @@ struct String trim(struct String str) {
 char isEmpty(char ch) {
     return ch == ' ' || ch == '\t' || ch == '\n';
 }
+
+char isBlank(struct String string) {
+    if (string.str == NULL || string.length == 0) {
+        return 1;
+    }
+
+    int start = 0;
+    int end = string.length - 1;
+
+    while (start <= end) {
+        if (!isEmpty(string.str[start++]) || !isEmpty(string.str[end--])) {
+            return 0;
+        }
+    }
+
+    return 1;
+}

@@ -15,4 +15,6 @@ string from to,
  */
 struct String substring(struct String, int, int);
 
+char isBlank(struct String);
+
 #endif
