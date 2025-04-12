@@ -1,11 +1,10 @@
 #include "iolib.h"
 #include "stdio.h"
 #include "stdlib.h"
+#include "array_utils.h"
 
 #define INIT_LEN 1
 #define EXPAND_COEF 2
-
-void expand(char**, int oldLen, int newLen);
 
 struct String readline() {
     int currLen = INIT_LEN;
@@ -27,14 +26,4 @@ struct String readline() {
     free(chArr);
 
     return res;
-}
-
-void expand(char** str, int oldLen, int newLen) {
-    char * newStr = malloc(sizeof(char) * newLen);
-    for (int i = 0; i < oldLen; i++) {
-        newStr[i] = *str[i];
-    }
-
-    free(*str);
-    *str = newStr;
 }
