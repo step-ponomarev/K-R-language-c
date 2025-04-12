@@ -1,7 +1,6 @@
 #include "string.h"
 #include "stdlib.h"
-
-char isEmpty(char);
+#include "char_utils.h"
 
 struct String createString(char* ch) {
     int len = 0;
@@ -75,10 +74,6 @@ struct String trim(struct String str) {
     }
 
     return substring(str, start, end);
-}
-
-char isEmpty(char ch) {
-    return ch == ' ' || ch == '\t' || ch == '\n';
 }
 
 char isBlank(struct String string) {

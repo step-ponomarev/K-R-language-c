@@ -4,5 +4,6 @@
 #include "string.h"
 
 struct String readline();
+struct String readWord();
 
 #endif

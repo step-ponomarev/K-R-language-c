@@ -1,17 +1,10 @@
 #include "array_utils.h"
 #include "stdlib.h"
+#include "stdio.h"
 
 void expand(char** str, int oldLen, int newLen) {
     char * newStr = malloc(sizeof(char) * newLen);
-
-    int minLen;
-    if (oldLen < newLen) {
-        minLen = oldLen;
-    } else {
-        minLen = newLen;
-    }
-
-    for (int i = 0; i < minLen; i++) {
+    for (int i = 0; i < oldLen; i++) {
         newStr[i] = *str[i];
     }
 
