@@ -3,16 +3,16 @@
 
 #include "string.h"
 
-struct StringBuilder {
-    char* string;
-    int capacity;
-    int length;
-};
+typedef struct {
+  char *string;
+  int capacity;
+  int length;
+} StringBuilder;
 
-struct StringBuilder createStringBuilder();
-void destroyStringBuilder(struct StringBuilder builder);
+StringBuilder createStringBuilder();
+void destroyStringBuilder(StringBuilder builder);
 
-void append(struct StringBuilder* builder, struct String string);
-struct String stringBuilderToString(struct StringBuilder builder);
+void append(StringBuilder *builder, String string);
+String stringBuilderToString(StringBuilder builder);
 
 #endif

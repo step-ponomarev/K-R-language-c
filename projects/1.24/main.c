@@ -1,5 +1,5 @@
-#include "stdio.h"
 #include "../../lib/iolib.h"
+#include "stdio.h"
 
 #define INCLUDE "#include"
 #define COMMENT_LINE "//"
@@ -13,12 +13,11 @@
     программа, если писать ее для общего случая.)
 */
 
-
 int main() {
-    struct String word;
-    while ((word = readWord()).length > 0) {
-        printf("%s\n", word);
-    }
+  String word;
+  while ((word = readWord()).length > 0) {
+    printf("%s\n", word);
+  }
 
-    return 0;
+  return 0;
 }

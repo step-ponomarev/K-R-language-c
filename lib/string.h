@@ -1,20 +1,20 @@
 #ifndef STRING_H_
 #define STRING_H_
 
-struct String {
-    char * str;
-    int length;
-};
+typedef struct {
+  char *str;
+  int length;
+} String;
 
-struct String createString(char*);
-void destroyString(struct String);
-struct String trim(struct String);
+String createString(char *);
+void destroyString(String);
+String trim(String);
 
 /*
 string from to,
  */
-struct String substring(struct String, int, int);
+String substring(String, int, int);
 
-char isBlank(struct String);
+char isBlank(String);
 
 #endif

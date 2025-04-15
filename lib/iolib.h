@@ -3,7 +3,7 @@
 
 #include "string.h"
 
-struct String readline();
-struct String readWord();
+String readline();
+String readWord();
 
 #endif

@@ -1,18 +1,18 @@
 #ifndef STACK_H_
 #define STACK_H_
 
-struct Stack {
-    char* head;
-    int capacity;
-    int size;
-};
+typedef struct {
+  char *head;
+  int capacity;
+  int size;
+} Stack;
 
-struct Stack createStack();
-void destroyStack(struct Stack);
+Stack createStack();
+void destroyStack(Stack);
 
-void add(struct Stack*, char);
-char pop(struct Stack*);
-char peek(struct Stack);
-char isStackEmpty(struct Stack);
+void add(Stack *, char);
+char pop(Stack *);
+char peek(Stack);
+char isStackEmpty(Stack);
 
 #endif
