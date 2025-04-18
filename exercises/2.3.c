@@ -1,6 +1,5 @@
 #include "../lib/asserts.h"
 #include "../lib/iolib.h"
-#include "stdio.h"
 
 // cc ../lib/iolib.c ../lib/string.c ../lib/array_utils.c ../lib/char_utils.c
 // ../lib/asserts.c ./2.3.c -o main && ./main && rm -rf ./main
@@ -55,12 +54,8 @@ int powInt(int n, int pow) {
     return 1;
   }
 
-  if (pow == 1) {
-    return n;
-  }
-
   int res = n;
-  for (int i = 0; i < pow; i++) {
+  for (int i = 0; i < pow - 1; i++) {
     res *= n;
   }
 
@@ -105,7 +100,6 @@ int htoi(String s) {
 }
 
 int main() {
-  printf("Test hex validation:\n");
   assert("Check valid hex with small prefix", 1,
          isValidHex(createString("0xF")));
   assert("Check valid hex with capital prefix", 1,
@@ -115,11 +109,12 @@ int main() {
   assert("Check invalid hex with prefix", 0,
          isValidHex(createString("0x9328823G")));
 
-  printf("Test htoi:\n");
   assert("Test small x prefix conversion", 15, htoi(createString("0xF")));
   assert("Test capital X prefix conversion", 15, htoi(createString("0XF")));
   assert("Test without prefix conversion", 15, htoi(createString("F")));
   assert("Test invalid hex value", -1, htoi(createString("G")));
+
+  assert("Test longer value", 4094, htoi(createString("FFe")));
 
   return 0;
 }
