@@ -1,9 +1,10 @@
+#include "../lib/asserts.h"
 #include "../lib/iolib.h"
 #include "stdio.h"
-#include <stdio.h>
 
-#define GREEN_COLOR 32
-#define RED_COLOR 31
+// cc ../lib/iolib.c ../lib/string.c ../lib/array_utils.c ../lib/char_utils.c
+// ../lib/asserts.c ./2.3.c -o main && ./main && rm -rf ./main
+#define HEX_BIT_COUNT 16
 
 char isSupported(char ch) {
   if (ch >= '0' && ch <= '9') {
@@ -49,11 +50,58 @@ char isValidHex(String word) {
   return 1;
 }
 
-int htoi(String s) { return 0; }
+int powInt(int n, int pow) {
+  if (pow == 0) {
+    return 1;
+  }
 
-void assert(char desc[], int expected, int actual) {
-  printf("\033[%dm%s:\nExpexted: %d, actual: %d\n\n",
-         expected == actual ? GREEN_COLOR : RED_COLOR, desc, expected, actual);
+  if (pow == 1) {
+    return n;
+  }
+
+  int res = n;
+  for (int i = 0; i < pow; i++) {
+    res *= n;
+  }
+
+  return res;
+}
+
+int convertHexToNumber(char ch) {
+  if (ch >= '0' && ch <= '9') {
+    return ch - '0';
+  }
+
+  if (ch >= 'a' && ch <= 'f') {
+    return ch - 'a' + 10;
+  }
+
+  if (ch >= 'A' && ch <= 'F') {
+    return ch - 'A' + 10;
+  }
+
+  return -1;
+}
+
+int htoi(String s) {
+  if (!isValidHex(s)) {
+    return -1;
+  }
+
+  const char *str = s.str;
+
+  int pos = 0;
+  int res = 0;
+  int i = s.length - 1;
+  while (i >= 0) {
+    if (str[i] == 'x' || str[i] == 'X') {
+      break;
+    }
+
+    res += powInt(HEX_BIT_COUNT, pos++) * convertHexToNumber(str[i--]);
+  }
+
+  return res;
 }
 
 int main() {
@@ -71,7 +119,7 @@ int main() {
   assert("Test small x prefix conversion", 15, htoi(createString("0xF")));
   assert("Test capital X prefix conversion", 15, htoi(createString("0XF")));
   assert("Test without prefix conversion", 15, htoi(createString("F")));
-  assert("Test invalid hex value", 0, htoi(createString("G")));
+  assert("Test invalid hex value", -1, htoi(createString("G")));
 
   return 0;
 }
