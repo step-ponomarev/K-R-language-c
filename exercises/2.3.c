@@ -100,21 +100,22 @@ int htoi(String s) {
 }
 
 int main() {
-  assert("Check valid hex with small prefix", 1,
-         isValidHex(createString("0xF")));
-  assert("Check valid hex with capital prefix", 1,
-         isValidHex(createString("0XF")));
-  assert("Check valid hex without prefix string", 1,
-         isValidHex(createString("F")));
-  assert("Check invalid hex with prefix", 0,
-         isValidHex(createString("0x9328823G")));
+  assertEquals("Check valid hex with small prefix", 1,
+               isValidHex(createString("0xF")));
+  assertEquals("Check valid hex with capital prefix", 1,
+               isValidHex(createString("0XF")));
+  assertEquals("Check valid hex without prefix string", 1,
+               isValidHex(createString("F")));
+  assertEquals("Check invalid hex with prefix", 0,
+               isValidHex(createString("0x9328823G")));
 
-  assert("Test small x prefix conversion", 15, htoi(createString("0xF")));
-  assert("Test capital X prefix conversion", 15, htoi(createString("0XF")));
-  assert("Test without prefix conversion", 15, htoi(createString("F")));
-  assert("Test invalid hex value", -1, htoi(createString("G")));
+  assertEquals("Test small x prefix conversion", 15, htoi(createString("0xF")));
+  assertEquals("Test capital X prefix conversion", 15,
+               htoi(createString("0XF")));
+  assertEquals("Test without prefix conversion", 15, htoi(createString("F")));
+  assertEquals("Test invalid hex value", -1, htoi(createString("G")));
 
-  assert("Test longer value", 4094, htoi(createString("FFe")));
+  assertEquals("Test longer value", 4094, htoi(createString("FFe")));
 
   return 0;
 }

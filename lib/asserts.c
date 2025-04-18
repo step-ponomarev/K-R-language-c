@@ -5,7 +5,7 @@
 #define RED_COLOR 31
 #define STANDART_COLOR "\33[0:31m"
 
-void assert(char desc[], int expected, int actual) {
+void assertEquals(char desc[], int expected, int actual) {
   printf("\033[%dm* %s: Expexted: %d, actual: %d%s\n",
          expected == actual ? GREEN_COLOR : RED_COLOR, desc, expected, actual,
          STANDART_COLOR);
