@@ -12,3 +12,11 @@ char isEquals(char s1[], char s2[]) {
 
   return res;
 }
+
+int lengthOf(char str[]) {
+  int i = 0;
+  while (str[i++] != '\0') {
+  }
+
+  return i;
+}

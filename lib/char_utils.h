@@ -3,5 +3,6 @@
 
 char isEmpty(char);
 char isEquals(char[], char[]);
+int lengthOf(char[]);
 
 #endif
