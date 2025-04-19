@@ -1,5 +1,4 @@
 #include "../lib/asserts.h"
-#include <stdio.h>
 
 int invert(int x, int p, int n) {
   const int shift = p - n + 1;
