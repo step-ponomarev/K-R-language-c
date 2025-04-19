@@ -1,8 +1,10 @@
 #include "../lib/asserts.h"
-#include "../lib/iolib.h"
+#include "../lib/string.h"
+/*
+  cc ../lib/string.c ../lib/array_utils.c ../lib/char_utils.c ../lib/asserts.c /
+ ./2.3.c -o main && ./main && rm -rf ./main
+ */
 
-// cc ../lib/iolib.c ../lib/string.c ../lib/array_utils.c ../lib/char_utils.c
-// ../lib/asserts.c ./2.3.c -o main && ./main && rm -rf ./main
 #define HEX_BIT_COUNT 16
 
 char isSupported(char ch) {
