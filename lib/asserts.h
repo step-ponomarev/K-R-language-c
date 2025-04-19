@@ -3,6 +3,6 @@
 
 __attribute__((overloadable)) void assertEquals(char[], int, int);
 __attribute__((overloadable)) void assertEquals(char[], double, double);
-//__attribute__((overloadable)) void assertEquals(char[], char[], char);
+__attribute__((overloadable)) void assertEquals(char[], char[], char[]);
 
 #endif
