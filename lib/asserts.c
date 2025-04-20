@@ -24,7 +24,7 @@ __attribute__((overloadable)) void assertEquals(char desc[], char expected[],
                                                 char actual[]) {
   char equals = isEquals(expected, actual);
 
-  printf("\033[%dm* %s: Expexted: %s, actual: %s%s\n",
+  printf("\033[%dm* %s: Expexted: '%s', actual: '%s'%s\n",
          equals ? GREEN_COLOR : RED_COLOR, desc, expected, actual,
          STANDART_COLOR);
 }
