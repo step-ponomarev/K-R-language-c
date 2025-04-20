@@ -53,7 +53,8 @@ char *itob(int n, int b) {
 int main() {
   assertEquals("Convert 12 to binary", "1100", itob(12, 2));
   assertEquals("Convert 12 to binary", "C", itob(12, 16));
-  assertEquals("Convert 12 to binary", "4E6BC", itob(321212, 16));
+  assertEquals("Convert 321212 to binary", "4E6BC", itob(321212, 16));
+  assertEquals("Convert 321212 to binary", "1163274", itob(321212, 8));
 
   return 0;
 }
