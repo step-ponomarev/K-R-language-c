@@ -77,6 +77,8 @@ char isBlank(char *line) {
   return 1;
 }
 
+char isDigit(char ch) { return ch >= '0' && ch <= '9'; }
+
 void reverse(char *str) {
   int end = 0;
   while (str[end] != '\0') {

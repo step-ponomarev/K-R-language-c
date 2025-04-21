@@ -2,6 +2,7 @@
 #define CHAR_UTILS_H_
 
 char isEmpty(char);
+char isDigit(char);
 char isEquals(char[], char[]);
 int lengthOf(char[]);
 
