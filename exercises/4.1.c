@@ -14,9 +14,7 @@ int strrindex(char *s, char *t) {
     const int startSeq = i;
 
     int j = 0;
-    while (s[i] == t[j] && t[j] != '\0') {
-      i++;
-      j++;
+    for (; s[i] == t[j] && t[j] != '\0'; i++, j++) {
     }
 
     if (t[j] == '\0' && (s[i - 1] == t[j - 1])) {
