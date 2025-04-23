@@ -1,0 +1,146 @@
+[
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/common.dir/src/lib/asserts.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/asserts.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/lib/asserts.c",
+  "output": "CMakeFiles/common.dir/src/lib/asserts.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/common.dir/src/lib/char_utils.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/char_utils.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/lib/char_utils.c",
+  "output": "CMakeFiles/common.dir/src/lib/char_utils.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/common.dir/src/lib/iolib.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/iolib.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/lib/iolib.c",
+  "output": "CMakeFiles/common.dir/src/lib/iolib.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/common.dir/src/lib/stack.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/stack.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/lib/stack.c",
+  "output": "CMakeFiles/common.dir/src/lib/stack.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/common.dir/src/lib/stringutils.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/stringutils.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/lib/stringutils.c",
+  "output": "CMakeFiles/common.dir/src/lib/stringutils.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__2_1_c.dir/src/exercises/2.1.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/2.1.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/2.1.c",
+  "output": "CMakeFiles/ex_src__exercises__2_1_c.dir/src/exercises/2.1.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__2_10_c.dir/src/exercises/2.10.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/2.10.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/2.10.c",
+  "output": "CMakeFiles/ex_src__exercises__2_10_c.dir/src/exercises/2.10.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__2_2_c.dir/src/exercises/2.2.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/2.2.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/2.2.c",
+  "output": "CMakeFiles/ex_src__exercises__2_2_c.dir/src/exercises/2.2.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__2_3_c.dir/src/exercises/2.3.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/2.3.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/2.3.c",
+  "output": "CMakeFiles/ex_src__exercises__2_3_c.dir/src/exercises/2.3.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__2_4_c.dir/src/exercises/2.4.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/2.4.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/2.4.c",
+  "output": "CMakeFiles/ex_src__exercises__2_4_c.dir/src/exercises/2.4.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__2_5_c.dir/src/exercises/2.5.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/2.5.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/2.5.c",
+  "output": "CMakeFiles/ex_src__exercises__2_5_c.dir/src/exercises/2.5.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__2_6_c.dir/src/exercises/2.6.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/2.6.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/2.6.c",
+  "output": "CMakeFiles/ex_src__exercises__2_6_c.dir/src/exercises/2.6.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__2_7_c.dir/src/exercises/2.7.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/2.7.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/2.7.c",
+  "output": "CMakeFiles/ex_src__exercises__2_7_c.dir/src/exercises/2.7.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__2_8_c.dir/src/exercises/2.8.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/2.8.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/2.8.c",
+  "output": "CMakeFiles/ex_src__exercises__2_8_c.dir/src/exercises/2.8.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__2_9_c.dir/src/exercises/2.9.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/2.9.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/2.9.c",
+  "output": "CMakeFiles/ex_src__exercises__2_9_c.dir/src/exercises/2.9.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__3_1_c.dir/src/exercises/3.1.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/3.1.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/3.1.c",
+  "output": "CMakeFiles/ex_src__exercises__3_1_c.dir/src/exercises/3.1.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__3_2_c.dir/src/exercises/3.2.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/3.2.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/3.2.c",
+  "output": "CMakeFiles/ex_src__exercises__3_2_c.dir/src/exercises/3.2.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__3_3_c.dir/src/exercises/3.3.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/3.3.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/3.3.c",
+  "output": "CMakeFiles/ex_src__exercises__3_3_c.dir/src/exercises/3.3.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__3_4_c.dir/src/exercises/3.4.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/3.4.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/3.4.c",
+  "output": "CMakeFiles/ex_src__exercises__3_4_c.dir/src/exercises/3.4.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__3_5_c.dir/src/exercises/3.5.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/3.5.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/3.5.c",
+  "output": "CMakeFiles/ex_src__exercises__3_5_c.dir/src/exercises/3.5.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__3_6_c.dir/src/exercises/3.6.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/3.6.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/3.6.c",
+  "output": "CMakeFiles/ex_src__exercises__3_6_c.dir/src/exercises/3.6.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__4_1_c.dir/src/exercises/4.1.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/4.1.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/4.1.c",
+  "output": "CMakeFiles/ex_src__exercises__4_1_c.dir/src/exercises/4.1.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__4_2_c.dir/src/exercises/4.2.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/4.2.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/4.2.c",
+  "output": "CMakeFiles/ex_src__exercises__4_2_c.dir/src/exercises/4.2.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__4_3_c.dir/src/exercises/4.3.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/4.3.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/4.3.c",
+  "output": "CMakeFiles/ex_src__exercises__4_3_c.dir/src/exercises/4.3.c.o"
+}
+]
