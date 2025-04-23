@@ -37,25 +37,25 @@ int main() {
   char wrd[0];
   int len = 0;
 
-  Stack *stack = createStack(sizeof(Token));
+  Stack *stack = create_stack(sizeof(Token));
   while ((len = readWord(wrd)) > 0) {
     if (len == 1 && isOp(wrd[0])) {
       Token digit2;
-      stackPop(stack, &digit2);
+      stack_pop(stack, &digit2);
 
       Token digit1;
-      stackPop(stack, &digit1);
+      stack_pop(stack, &digit1);
 
-      stackAdd(stack, &((Token){.op = calculate(digit1.op, digit2.op, wrd[0]),
-                                .op_type = OP_TYPE_DIGIT}));
+      stack_add(stack, &((Token){.op = calculate(digit1.op, digit2.op, wrd[0]),
+                                 .op_type = OP_TYPE_DIGIT}));
       continue;
     }
 
-    stackAdd(stack, &((Token){.op = atoi(wrd), .op_type = OP_TYPE_DIGIT}));
+    stack_add(stack, &((Token){.op = atoi(wrd), .op_type = OP_TYPE_DIGIT}));
   }
 
   Token res;
-  stackPop(stack, &res);
+  stack_pop(stack, &res);
 
   printf("Result: %d\n", res.op);
 
