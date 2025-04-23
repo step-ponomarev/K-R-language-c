@@ -16,6 +16,23 @@ char isOp(const char ch) {
   return ch == '-' || ch == '+' || ch == '/' || ch == '*' || ch == '%';
 }
 
+int calculate(const int a, const int b, const char op) {
+  switch (op) {
+  case '-':
+    return a - b;
+  case '+':
+    return a + b;
+  case '*':
+    return a * b;
+  case '/':
+    return a / b;
+  case '%':
+    return a % b;
+  }
+
+  return -1;
+}
+
 int main() {
   char wrd[0];
   int len = 0;
@@ -23,22 +40,24 @@ int main() {
   Stack *stack = createStack(sizeof(Token));
   while ((len = readWord(wrd)) > 0) {
     if (len == 1 && isOp(wrd[0])) {
-      const Token op = {.op = wrd[0], .op_type = OP_TYPE_OP};
-      stackAdd(stack, &op);
+      Token digit2;
+      stackPop(stack, &digit2);
 
+      Token digit1;
+      stackPop(stack, &digit1);
+
+      stackAdd(stack, &((Token){.op = calculate(digit1.op, digit2.op, wrd[0]),
+                                .op_type = OP_TYPE_DIGIT}));
       continue;
     }
 
-    const Token digit = {.op = atoi(wrd), .op_type = OP_TYPE_DIGIT};
-    stackAdd(stack, &digit);
+    stackAdd(stack, &((Token){.op = atoi(wrd), .op_type = OP_TYPE_DIGIT}));
   }
 
-  while (!isStackEmpty(stack)) {
-    Token tkn;
-    stackPop(stack, &tkn);
+  Token res;
+  stackPop(stack, &res);
 
-    printf("op: %d\n", tkn.op);
-  }
+  printf("Result: %d\n", res.op);
 
   return 0;
 }

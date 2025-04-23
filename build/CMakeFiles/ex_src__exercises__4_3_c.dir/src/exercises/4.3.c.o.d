@@ -1,6 +1,5 @@
 CMakeFiles/ex_src__exercises__4_3_c.dir/src/exercises/4.3.c.o: \
   /Users/stepan.ponomarev/K-R-language-c/src/exercises/4.3.c \
-  /Users/stepan.ponomarev/K-R-language-c/src/exercises/../lib/char_utils.h \
   /Users/stepan.ponomarev/K-R-language-c/src/exercises/../lib/iolib.h \
   /Users/stepan.ponomarev/K-R-language-c/src/exercises/../lib/stack.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stddef.h \

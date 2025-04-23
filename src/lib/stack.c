@@ -78,4 +78,6 @@ int stackPeek(const Stack *stack, void *dest) {
   return 0;
 }
 
+int stack_size(const Stack *stack) { return stack->size; }
+
 char isStackEmpty(const Stack *stack) { return stack->size == 0; }

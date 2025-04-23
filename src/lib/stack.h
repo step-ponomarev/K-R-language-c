@@ -11,6 +11,7 @@ void destroyStack(Stack *);
 int stackAdd(Stack *, const void *);
 int stackPop(Stack *, void *);
 int stackPeek(const Stack *, void *);
+int stack_size(const Stack *);
 char isStackEmpty(const Stack *);
 
 #endif
