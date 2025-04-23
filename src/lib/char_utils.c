@@ -4,7 +4,7 @@
 
 char isEmpty(char ch) { return ch == ' ' || ch == '\t' || ch == '\n'; }
 
-char isEquals(char s1[], char s2[]) {
+char isEquals(const char s1[], const char s2[]) {
   char res = 1;
 
   int i = 0;

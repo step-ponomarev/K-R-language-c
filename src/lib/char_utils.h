@@ -3,7 +3,7 @@
 
 char isEmpty(char);
 char isDigit(char);
-char isEquals(char[], char[]);
+char isEquals(const char[], const char[]);
 int lengthOf(char[]);
 
 char *substring(char *line, int startIndex, int endIndex);
