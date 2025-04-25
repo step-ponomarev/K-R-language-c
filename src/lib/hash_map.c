@@ -37,6 +37,9 @@ typedef struct Node {
   struct MapNodeValue value;
 } Node;
 
+// TODO: Несколько раз считаю хеш при поиске ноды для переданного ключа, этот
+// момент нужно поправить
+
 int get_hash(const char val[], const size_t size);
 char isKeysEqual(const char *key1, const char *key2, const size_t size);
 char findNode(const Map *map, const MapEntry key, Node *dest);
