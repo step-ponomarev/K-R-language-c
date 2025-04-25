@@ -59,6 +59,16 @@ int executeFn(const char fn[], int a) {
   return -1;
 }
 
+char isVariable(const char word[]) {
+  char isNotDigit = 0;
+  int i = 0;
+  while (word[i] != '\0') {
+    isNotDigit = isNotDigit || !isDigit(word[i++]);
+  }
+
+  return isNotDigit;
+}
+
 int main() {
   char wrd[0];
   int len = 0;
@@ -85,6 +95,9 @@ int main() {
                                  .op_type = OP_TYPE_DIGIT}));
 
       continue;
+    }
+
+    if (isVariable(wrd)) {
     }
 
     stack_add(stack, &((Token){.op = atoi(wrd), .op_type = OP_TYPE_DIGIT}));

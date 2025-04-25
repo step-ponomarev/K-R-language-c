@@ -1,0 +1,1 @@
+PROJECT_DIR=$HOME/K-R-language-c && cc $PROJECT_DIR/src/lib/hash_map.c $PROJECT_DIR/src/lib/array_list.c $PROJECT_DIR/src/lib/char_utils.c $PROJECT_DIR/src/lib/asserts.c $PROJECT_DIR/test/hash_map.test.c -o main && ./main && rm -rf ./main

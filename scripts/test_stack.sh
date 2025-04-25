@@ -1,0 +1,1 @@
+PROJECT_DIR=$HOME/K-R-language-c && cc $PROJECT_DIR/stack.c $PROJECT_DIR/array_utils.c $PROJECT_DIR/lib/asserts.c $PROJECT_DIR/char_utils.c $PROJECT_DIR/test/stack.test.c -o main && ./main && rm -rf ./main
