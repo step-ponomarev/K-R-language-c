@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/common.dir/src/lib/array_list.c.o"
+  "CMakeFiles/common.dir/src/lib/array_list.c.o.d"
   "CMakeFiles/common.dir/src/lib/asserts.c.o"
   "CMakeFiles/common.dir/src/lib/asserts.c.o.d"
   "CMakeFiles/common.dir/src/lib/char_utils.c.o"
   "CMakeFiles/common.dir/src/lib/char_utils.c.o.d"
+  "CMakeFiles/common.dir/src/lib/hash_map.c.o"
+  "CMakeFiles/common.dir/src/lib/hash_map.c.o.d"
   "CMakeFiles/common.dir/src/lib/iolib.c.o"
   "CMakeFiles/common.dir/src/lib/iolib.c.o.d"
   "CMakeFiles/common.dir/src/lib/stack.c.o"

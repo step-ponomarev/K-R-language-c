@@ -832,6 +832,30 @@ src/exercises/4.3.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__4_3_c.dir/build.make CMakeFiles/ex_src__exercises__4_3_c.dir/src/exercises/4.3.c.s
 .PHONY : src/exercises/4.3.c.s
 
+src/lib/array_list.o: src/lib/array_list.c.o
+.PHONY : src/lib/array_list.o
+
+# target to build an object file
+src/lib/array_list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/array_list.c.o
+.PHONY : src/lib/array_list.c.o
+
+src/lib/array_list.i: src/lib/array_list.c.i
+.PHONY : src/lib/array_list.i
+
+# target to preprocess a source file
+src/lib/array_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/array_list.c.i
+.PHONY : src/lib/array_list.c.i
+
+src/lib/array_list.s: src/lib/array_list.c.s
+.PHONY : src/lib/array_list.s
+
+# target to generate assembly for a file
+src/lib/array_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/array_list.c.s
+.PHONY : src/lib/array_list.c.s
+
 src/lib/asserts.o: src/lib/asserts.c.o
 .PHONY : src/lib/asserts.o
 
@@ -879,6 +903,30 @@ src/lib/char_utils.s: src/lib/char_utils.c.s
 src/lib/char_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/char_utils.c.s
 .PHONY : src/lib/char_utils.c.s
+
+src/lib/hash_map.o: src/lib/hash_map.c.o
+.PHONY : src/lib/hash_map.o
+
+# target to build an object file
+src/lib/hash_map.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/hash_map.c.o
+.PHONY : src/lib/hash_map.c.o
+
+src/lib/hash_map.i: src/lib/hash_map.c.i
+.PHONY : src/lib/hash_map.i
+
+# target to preprocess a source file
+src/lib/hash_map.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/hash_map.c.i
+.PHONY : src/lib/hash_map.c.i
+
+src/lib/hash_map.s: src/lib/hash_map.c.s
+.PHONY : src/lib/hash_map.s
+
+# target to generate assembly for a file
+src/lib/hash_map.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/hash_map.c.s
+.PHONY : src/lib/hash_map.c.s
 
 src/lib/iolib.o: src/lib/iolib.c.o
 .PHONY : src/lib/iolib.o
@@ -1037,12 +1085,18 @@ help:
 	@echo "... src/exercises/4.3.o"
 	@echo "... src/exercises/4.3.i"
 	@echo "... src/exercises/4.3.s"
+	@echo "... src/lib/array_list.o"
+	@echo "... src/lib/array_list.i"
+	@echo "... src/lib/array_list.s"
 	@echo "... src/lib/asserts.o"
 	@echo "... src/lib/asserts.i"
 	@echo "... src/lib/asserts.s"
 	@echo "... src/lib/char_utils.o"
 	@echo "... src/lib/char_utils.i"
 	@echo "... src/lib/char_utils.s"
+	@echo "... src/lib/hash_map.o"
+	@echo "... src/lib/hash_map.i"
+	@echo "... src/lib/hash_map.s"
 	@echo "... src/lib/iolib.o"
 	@echo "... src/lib/iolib.i"
 	@echo "... src/lib/iolib.s"

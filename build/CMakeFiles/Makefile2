@@ -142,12 +142,12 @@ clean: CMakeFiles/ex_src__exercises__4_3_c.dir/clean
 CMakeFiles/common.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target common"
 .PHONY : CMakeFiles/common.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/common.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/common.dir/rule
@@ -159,7 +159,7 @@ common: CMakeFiles/common.dir/rule
 # codegen rule for target.
 CMakeFiles/common.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target common"
 .PHONY : CMakeFiles/common.dir/codegen
 
 # clean rule for target.
@@ -174,12 +174,12 @@ CMakeFiles/common.dir/clean:
 CMakeFiles/ex_src__exercises__2_1_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_1_c.dir/build.make CMakeFiles/ex_src__exercises__2_1_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_1_c.dir/build.make CMakeFiles/ex_src__exercises__2_1_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=9,10 "Built target ex_src__exercises__2_1_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=11,12 "Built target ex_src__exercises__2_1_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_1_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__2_1_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__2_1_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__2_1_c.dir/rule
@@ -191,7 +191,7 @@ ex_src__exercises__2_1_c: CMakeFiles/ex_src__exercises__2_1_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__2_1_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_1_c.dir/build.make CMakeFiles/ex_src__exercises__2_1_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=9,10 "Finished codegen for target ex_src__exercises__2_1_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=11,12 "Finished codegen for target ex_src__exercises__2_1_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_1_c.dir/codegen
 
 # clean rule for target.
@@ -206,12 +206,12 @@ CMakeFiles/ex_src__exercises__2_1_c.dir/clean:
 CMakeFiles/ex_src__exercises__2_10_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_10_c.dir/build.make CMakeFiles/ex_src__exercises__2_10_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_10_c.dir/build.make CMakeFiles/ex_src__exercises__2_10_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=7,8 "Built target ex_src__exercises__2_10_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=9,10 "Built target ex_src__exercises__2_10_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_10_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__2_10_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__2_10_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__2_10_c.dir/rule
@@ -223,7 +223,7 @@ ex_src__exercises__2_10_c: CMakeFiles/ex_src__exercises__2_10_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__2_10_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_10_c.dir/build.make CMakeFiles/ex_src__exercises__2_10_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=7,8 "Finished codegen for target ex_src__exercises__2_10_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=9,10 "Finished codegen for target ex_src__exercises__2_10_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_10_c.dir/codegen
 
 # clean rule for target.
@@ -238,12 +238,12 @@ CMakeFiles/ex_src__exercises__2_10_c.dir/clean:
 CMakeFiles/ex_src__exercises__2_2_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_2_c.dir/build.make CMakeFiles/ex_src__exercises__2_2_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_2_c.dir/build.make CMakeFiles/ex_src__exercises__2_2_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=11,12 "Built target ex_src__exercises__2_2_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=13,14 "Built target ex_src__exercises__2_2_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_2_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__2_2_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__2_2_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__2_2_c.dir/rule
@@ -255,7 +255,7 @@ ex_src__exercises__2_2_c: CMakeFiles/ex_src__exercises__2_2_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__2_2_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_2_c.dir/build.make CMakeFiles/ex_src__exercises__2_2_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=11,12 "Finished codegen for target ex_src__exercises__2_2_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=13,14 "Finished codegen for target ex_src__exercises__2_2_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_2_c.dir/codegen
 
 # clean rule for target.
@@ -270,12 +270,12 @@ CMakeFiles/ex_src__exercises__2_2_c.dir/clean:
 CMakeFiles/ex_src__exercises__2_3_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_3_c.dir/build.make CMakeFiles/ex_src__exercises__2_3_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_3_c.dir/build.make CMakeFiles/ex_src__exercises__2_3_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=13,14 "Built target ex_src__exercises__2_3_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=15,16 "Built target ex_src__exercises__2_3_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_3_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__2_3_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__2_3_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__2_3_c.dir/rule
@@ -287,7 +287,7 @@ ex_src__exercises__2_3_c: CMakeFiles/ex_src__exercises__2_3_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__2_3_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_3_c.dir/build.make CMakeFiles/ex_src__exercises__2_3_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=13,14 "Finished codegen for target ex_src__exercises__2_3_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=15,16 "Finished codegen for target ex_src__exercises__2_3_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_3_c.dir/codegen
 
 # clean rule for target.
@@ -302,12 +302,12 @@ CMakeFiles/ex_src__exercises__2_3_c.dir/clean:
 CMakeFiles/ex_src__exercises__2_4_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_4_c.dir/build.make CMakeFiles/ex_src__exercises__2_4_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_4_c.dir/build.make CMakeFiles/ex_src__exercises__2_4_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=15,16 "Built target ex_src__exercises__2_4_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=17,18 "Built target ex_src__exercises__2_4_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_4_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__2_4_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__2_4_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__2_4_c.dir/rule
@@ -319,7 +319,7 @@ ex_src__exercises__2_4_c: CMakeFiles/ex_src__exercises__2_4_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__2_4_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_4_c.dir/build.make CMakeFiles/ex_src__exercises__2_4_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=15,16 "Finished codegen for target ex_src__exercises__2_4_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=17,18 "Finished codegen for target ex_src__exercises__2_4_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_4_c.dir/codegen
 
 # clean rule for target.
@@ -334,12 +334,12 @@ CMakeFiles/ex_src__exercises__2_4_c.dir/clean:
 CMakeFiles/ex_src__exercises__2_5_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_5_c.dir/build.make CMakeFiles/ex_src__exercises__2_5_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_5_c.dir/build.make CMakeFiles/ex_src__exercises__2_5_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=17,18 "Built target ex_src__exercises__2_5_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=19,20 "Built target ex_src__exercises__2_5_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_5_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__2_5_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__2_5_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__2_5_c.dir/rule
@@ -351,7 +351,7 @@ ex_src__exercises__2_5_c: CMakeFiles/ex_src__exercises__2_5_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__2_5_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_5_c.dir/build.make CMakeFiles/ex_src__exercises__2_5_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=17,18 "Finished codegen for target ex_src__exercises__2_5_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=19,20 "Finished codegen for target ex_src__exercises__2_5_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_5_c.dir/codegen
 
 # clean rule for target.
@@ -366,12 +366,12 @@ CMakeFiles/ex_src__exercises__2_5_c.dir/clean:
 CMakeFiles/ex_src__exercises__2_6_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_6_c.dir/build.make CMakeFiles/ex_src__exercises__2_6_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_6_c.dir/build.make CMakeFiles/ex_src__exercises__2_6_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=19,20 "Built target ex_src__exercises__2_6_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=21,22 "Built target ex_src__exercises__2_6_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_6_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__2_6_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__2_6_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__2_6_c.dir/rule
@@ -383,7 +383,7 @@ ex_src__exercises__2_6_c: CMakeFiles/ex_src__exercises__2_6_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__2_6_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_6_c.dir/build.make CMakeFiles/ex_src__exercises__2_6_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=19,20 "Finished codegen for target ex_src__exercises__2_6_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=21,22 "Finished codegen for target ex_src__exercises__2_6_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_6_c.dir/codegen
 
 # clean rule for target.
@@ -398,12 +398,12 @@ CMakeFiles/ex_src__exercises__2_6_c.dir/clean:
 CMakeFiles/ex_src__exercises__2_7_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_7_c.dir/build.make CMakeFiles/ex_src__exercises__2_7_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_7_c.dir/build.make CMakeFiles/ex_src__exercises__2_7_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=21,22 "Built target ex_src__exercises__2_7_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=23,24 "Built target ex_src__exercises__2_7_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_7_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__2_7_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__2_7_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__2_7_c.dir/rule
@@ -415,7 +415,7 @@ ex_src__exercises__2_7_c: CMakeFiles/ex_src__exercises__2_7_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__2_7_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_7_c.dir/build.make CMakeFiles/ex_src__exercises__2_7_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=21,22 "Finished codegen for target ex_src__exercises__2_7_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=23,24 "Finished codegen for target ex_src__exercises__2_7_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_7_c.dir/codegen
 
 # clean rule for target.
@@ -430,12 +430,12 @@ CMakeFiles/ex_src__exercises__2_7_c.dir/clean:
 CMakeFiles/ex_src__exercises__2_8_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_8_c.dir/build.make CMakeFiles/ex_src__exercises__2_8_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_8_c.dir/build.make CMakeFiles/ex_src__exercises__2_8_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=23,24 "Built target ex_src__exercises__2_8_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=25,26 "Built target ex_src__exercises__2_8_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_8_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__2_8_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__2_8_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__2_8_c.dir/rule
@@ -447,7 +447,7 @@ ex_src__exercises__2_8_c: CMakeFiles/ex_src__exercises__2_8_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__2_8_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_8_c.dir/build.make CMakeFiles/ex_src__exercises__2_8_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=23,24 "Finished codegen for target ex_src__exercises__2_8_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=25,26 "Finished codegen for target ex_src__exercises__2_8_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_8_c.dir/codegen
 
 # clean rule for target.
@@ -462,12 +462,12 @@ CMakeFiles/ex_src__exercises__2_8_c.dir/clean:
 CMakeFiles/ex_src__exercises__2_9_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_9_c.dir/build.make CMakeFiles/ex_src__exercises__2_9_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_9_c.dir/build.make CMakeFiles/ex_src__exercises__2_9_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=25,26 "Built target ex_src__exercises__2_9_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=27,28 "Built target ex_src__exercises__2_9_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_9_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__2_9_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__2_9_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__2_9_c.dir/rule
@@ -479,7 +479,7 @@ ex_src__exercises__2_9_c: CMakeFiles/ex_src__exercises__2_9_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__2_9_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__2_9_c.dir/build.make CMakeFiles/ex_src__exercises__2_9_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=25,26 "Finished codegen for target ex_src__exercises__2_9_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=27,28 "Finished codegen for target ex_src__exercises__2_9_c"
 .PHONY : CMakeFiles/ex_src__exercises__2_9_c.dir/codegen
 
 # clean rule for target.
@@ -494,12 +494,12 @@ CMakeFiles/ex_src__exercises__2_9_c.dir/clean:
 CMakeFiles/ex_src__exercises__3_1_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_1_c.dir/build.make CMakeFiles/ex_src__exercises__3_1_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_1_c.dir/build.make CMakeFiles/ex_src__exercises__3_1_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=27,28 "Built target ex_src__exercises__3_1_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=29,30 "Built target ex_src__exercises__3_1_c"
 .PHONY : CMakeFiles/ex_src__exercises__3_1_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__3_1_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__3_1_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__3_1_c.dir/rule
@@ -511,7 +511,7 @@ ex_src__exercises__3_1_c: CMakeFiles/ex_src__exercises__3_1_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__3_1_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_1_c.dir/build.make CMakeFiles/ex_src__exercises__3_1_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=27,28 "Finished codegen for target ex_src__exercises__3_1_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=29,30 "Finished codegen for target ex_src__exercises__3_1_c"
 .PHONY : CMakeFiles/ex_src__exercises__3_1_c.dir/codegen
 
 # clean rule for target.
@@ -526,12 +526,12 @@ CMakeFiles/ex_src__exercises__3_1_c.dir/clean:
 CMakeFiles/ex_src__exercises__3_2_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_2_c.dir/build.make CMakeFiles/ex_src__exercises__3_2_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_2_c.dir/build.make CMakeFiles/ex_src__exercises__3_2_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=29,30 "Built target ex_src__exercises__3_2_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=31,32 "Built target ex_src__exercises__3_2_c"
 .PHONY : CMakeFiles/ex_src__exercises__3_2_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__3_2_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__3_2_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__3_2_c.dir/rule
@@ -543,7 +543,7 @@ ex_src__exercises__3_2_c: CMakeFiles/ex_src__exercises__3_2_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__3_2_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_2_c.dir/build.make CMakeFiles/ex_src__exercises__3_2_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=29,30 "Finished codegen for target ex_src__exercises__3_2_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=31,32 "Finished codegen for target ex_src__exercises__3_2_c"
 .PHONY : CMakeFiles/ex_src__exercises__3_2_c.dir/codegen
 
 # clean rule for target.
@@ -558,12 +558,12 @@ CMakeFiles/ex_src__exercises__3_2_c.dir/clean:
 CMakeFiles/ex_src__exercises__3_3_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_3_c.dir/build.make CMakeFiles/ex_src__exercises__3_3_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_3_c.dir/build.make CMakeFiles/ex_src__exercises__3_3_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=31,32 "Built target ex_src__exercises__3_3_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=33,34 "Built target ex_src__exercises__3_3_c"
 .PHONY : CMakeFiles/ex_src__exercises__3_3_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__3_3_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__3_3_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__3_3_c.dir/rule
@@ -575,7 +575,7 @@ ex_src__exercises__3_3_c: CMakeFiles/ex_src__exercises__3_3_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__3_3_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_3_c.dir/build.make CMakeFiles/ex_src__exercises__3_3_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=31,32 "Finished codegen for target ex_src__exercises__3_3_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=33,34 "Finished codegen for target ex_src__exercises__3_3_c"
 .PHONY : CMakeFiles/ex_src__exercises__3_3_c.dir/codegen
 
 # clean rule for target.
@@ -590,12 +590,12 @@ CMakeFiles/ex_src__exercises__3_3_c.dir/clean:
 CMakeFiles/ex_src__exercises__3_4_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_4_c.dir/build.make CMakeFiles/ex_src__exercises__3_4_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_4_c.dir/build.make CMakeFiles/ex_src__exercises__3_4_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=33,34 "Built target ex_src__exercises__3_4_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=35,36 "Built target ex_src__exercises__3_4_c"
 .PHONY : CMakeFiles/ex_src__exercises__3_4_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__3_4_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__3_4_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__3_4_c.dir/rule
@@ -607,7 +607,7 @@ ex_src__exercises__3_4_c: CMakeFiles/ex_src__exercises__3_4_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__3_4_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_4_c.dir/build.make CMakeFiles/ex_src__exercises__3_4_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=33,34 "Finished codegen for target ex_src__exercises__3_4_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=35,36 "Finished codegen for target ex_src__exercises__3_4_c"
 .PHONY : CMakeFiles/ex_src__exercises__3_4_c.dir/codegen
 
 # clean rule for target.
@@ -622,12 +622,12 @@ CMakeFiles/ex_src__exercises__3_4_c.dir/clean:
 CMakeFiles/ex_src__exercises__3_5_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_5_c.dir/build.make CMakeFiles/ex_src__exercises__3_5_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_5_c.dir/build.make CMakeFiles/ex_src__exercises__3_5_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=35,36 "Built target ex_src__exercises__3_5_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=37,38 "Built target ex_src__exercises__3_5_c"
 .PHONY : CMakeFiles/ex_src__exercises__3_5_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__3_5_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__3_5_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__3_5_c.dir/rule
@@ -639,7 +639,7 @@ ex_src__exercises__3_5_c: CMakeFiles/ex_src__exercises__3_5_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__3_5_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_5_c.dir/build.make CMakeFiles/ex_src__exercises__3_5_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=35,36 "Finished codegen for target ex_src__exercises__3_5_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=37,38 "Finished codegen for target ex_src__exercises__3_5_c"
 .PHONY : CMakeFiles/ex_src__exercises__3_5_c.dir/codegen
 
 # clean rule for target.
@@ -654,12 +654,12 @@ CMakeFiles/ex_src__exercises__3_5_c.dir/clean:
 CMakeFiles/ex_src__exercises__3_6_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_6_c.dir/build.make CMakeFiles/ex_src__exercises__3_6_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_6_c.dir/build.make CMakeFiles/ex_src__exercises__3_6_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=37,38 "Built target ex_src__exercises__3_6_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=39,40 "Built target ex_src__exercises__3_6_c"
 .PHONY : CMakeFiles/ex_src__exercises__3_6_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__3_6_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__3_6_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__3_6_c.dir/rule
@@ -671,7 +671,7 @@ ex_src__exercises__3_6_c: CMakeFiles/ex_src__exercises__3_6_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__3_6_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__3_6_c.dir/build.make CMakeFiles/ex_src__exercises__3_6_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=37,38 "Finished codegen for target ex_src__exercises__3_6_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=39,40 "Finished codegen for target ex_src__exercises__3_6_c"
 .PHONY : CMakeFiles/ex_src__exercises__3_6_c.dir/codegen
 
 # clean rule for target.
@@ -686,12 +686,12 @@ CMakeFiles/ex_src__exercises__3_6_c.dir/clean:
 CMakeFiles/ex_src__exercises__4_1_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__4_1_c.dir/build.make CMakeFiles/ex_src__exercises__4_1_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__4_1_c.dir/build.make CMakeFiles/ex_src__exercises__4_1_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=39,40 "Built target ex_src__exercises__4_1_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=41,42 "Built target ex_src__exercises__4_1_c"
 .PHONY : CMakeFiles/ex_src__exercises__4_1_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__4_1_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__4_1_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__4_1_c.dir/rule
@@ -703,7 +703,7 @@ ex_src__exercises__4_1_c: CMakeFiles/ex_src__exercises__4_1_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__4_1_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__4_1_c.dir/build.make CMakeFiles/ex_src__exercises__4_1_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=39,40 "Finished codegen for target ex_src__exercises__4_1_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=41,42 "Finished codegen for target ex_src__exercises__4_1_c"
 .PHONY : CMakeFiles/ex_src__exercises__4_1_c.dir/codegen
 
 # clean rule for target.
@@ -718,12 +718,12 @@ CMakeFiles/ex_src__exercises__4_1_c.dir/clean:
 CMakeFiles/ex_src__exercises__4_2_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__4_2_c.dir/build.make CMakeFiles/ex_src__exercises__4_2_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__4_2_c.dir/build.make CMakeFiles/ex_src__exercises__4_2_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=41,42 "Built target ex_src__exercises__4_2_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=43,44 "Built target ex_src__exercises__4_2_c"
 .PHONY : CMakeFiles/ex_src__exercises__4_2_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__4_2_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__4_2_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__4_2_c.dir/rule
@@ -735,7 +735,7 @@ ex_src__exercises__4_2_c: CMakeFiles/ex_src__exercises__4_2_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__4_2_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__4_2_c.dir/build.make CMakeFiles/ex_src__exercises__4_2_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=41,42 "Finished codegen for target ex_src__exercises__4_2_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=43,44 "Finished codegen for target ex_src__exercises__4_2_c"
 .PHONY : CMakeFiles/ex_src__exercises__4_2_c.dir/codegen
 
 # clean rule for target.
@@ -750,12 +750,12 @@ CMakeFiles/ex_src__exercises__4_2_c.dir/clean:
 CMakeFiles/ex_src__exercises__4_3_c.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__4_3_c.dir/build.make CMakeFiles/ex_src__exercises__4_3_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__4_3_c.dir/build.make CMakeFiles/ex_src__exercises__4_3_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=43,44 "Built target ex_src__exercises__4_3_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=45,46 "Built target ex_src__exercises__4_3_c"
 .PHONY : CMakeFiles/ex_src__exercises__4_3_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex_src__exercises__4_3_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex_src__exercises__4_3_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles 0
 .PHONY : CMakeFiles/ex_src__exercises__4_3_c.dir/rule
@@ -767,7 +767,7 @@ ex_src__exercises__4_3_c: CMakeFiles/ex_src__exercises__4_3_c.dir/rule
 # codegen rule for target.
 CMakeFiles/ex_src__exercises__4_3_c.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__4_3_c.dir/build.make CMakeFiles/ex_src__exercises__4_3_c.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=43,44 "Finished codegen for target ex_src__exercises__4_3_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=45,46 "Finished codegen for target ex_src__exercises__4_3_c"
 .PHONY : CMakeFiles/ex_src__exercises__4_3_c.dir/codegen
 
 # clean rule for target.

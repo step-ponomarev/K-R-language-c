@@ -8,7 +8,7 @@ typedef struct Map Map;
 // val on stack
 typedef struct MapEntry {
   const size_t size;
-  const char *val;
+  const void *val;
 } MapEntry;
 
 Map *map_create();

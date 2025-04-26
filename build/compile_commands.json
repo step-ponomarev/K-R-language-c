@@ -1,6 +1,12 @@
 [
 {
   "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/common.dir/src/lib/array_list.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/array_list.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/lib/array_list.c",
+  "output": "CMakeFiles/common.dir/src/lib/array_list.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
   "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/common.dir/src/lib/asserts.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/asserts.c",
   "file": "/Users/stepan.ponomarev/K-R-language-c/src/lib/asserts.c",
   "output": "CMakeFiles/common.dir/src/lib/asserts.c.o"
@@ -10,6 +16,12 @@
   "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/common.dir/src/lib/char_utils.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/char_utils.c",
   "file": "/Users/stepan.ponomarev/K-R-language-c/src/lib/char_utils.c",
   "output": "CMakeFiles/common.dir/src/lib/char_utils.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/common.dir/src/lib/hash_map.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/hash_map.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/lib/hash_map.c",
+  "output": "CMakeFiles/common.dir/src/lib/hash_map.c.o"
 },
 {
   "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
