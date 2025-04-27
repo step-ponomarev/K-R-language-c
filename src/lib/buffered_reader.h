@@ -4,12 +4,12 @@
 typedef struct BufferedReader BufferedReader;
 
 BufferedReader *buffered_reader_create();
-void buffered_reader_destroy();
+void buffered_reader_destroy(BufferedReader *);
 
 int buffered_reader_get_char(BufferedReader *);
 void buffered_reader_unget_char(BufferedReader *, const int);
 
-int buffered_reader_get_line(BufferedReader *, char **);
-void buffered_reader_unget_string(BufferedReader *, const char *);
+void buffered_reader_get_line(BufferedReader *, char **);
+void buffered_reader_unget_string(const BufferedReader *, const char *);
 
 #endif

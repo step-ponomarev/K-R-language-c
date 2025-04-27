@@ -1,0 +1,1 @@
+PROJECT_DIR=$HOME/K-R-language-c && cc $PROJECT_DIR/src/lib/buffered_reader.c $PROJECT_DIR/src/lib/queue.c $PROJECT_DIR/src/lib/linked_list.c $PROJECT_DIR/test/buffered_reader.test.c -o main && ./main && rm -rf ./main

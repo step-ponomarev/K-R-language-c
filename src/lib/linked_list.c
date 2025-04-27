@@ -19,8 +19,8 @@ struct Node {
   void *val;
 };
 
-void freeNodes(Node *);
-void freeNode(Node *);
+void free_nodes(Node *);
+void free_node(Node *);
 Node *find_node_by_index(const List *, const int);
 
 List *list_create(const size_t element_size) {
@@ -35,7 +35,7 @@ List *list_create(const size_t element_size) {
 
 void list_destroy(List *list) {
   if (list->head) {
-    freeNodes(list->head);
+    free_nodes(list->head);
   }
 
   free(list);
@@ -73,7 +73,7 @@ void list_remove_head(List *list, void *dest) {
     list->head = prevHead->next;
     list->head->prev = NULL;
   }
-  freeNode(prevHead);
+  free_node(prevHead);
 
   list->size--;
 }
@@ -93,7 +93,7 @@ void list_remove_tail(List *list, void *dest) {
     list->tail = prevTail->prev;
     list->head->next = NULL;
   }
-  freeNode(prevTail);
+  free_node(prevTail);
 
   list->size--;
 }
@@ -127,7 +127,7 @@ char list_remove(List *list, const int i) {
       node->next->prev = node->prev;
     }
   }
-  freeNode(node);
+  free_node(node);
 
   list->size--;
   return 1;
@@ -190,16 +190,16 @@ Node *find_node_by_index(const List *list, const int i) {
   return curr;
 }
 
-void freeNodes(Node *node) {
+void free_nodes(Node *node) {
   if (!node) {
     return;
   }
 
-  freeNodes(node->next);
-  freeNode(node);
+  free_nodes(node->next);
+  free_node(node);
 }
 
-void freeNode(Node *node) {
+void free_node(Node *node) {
   if (!node) {
     return;
   }
