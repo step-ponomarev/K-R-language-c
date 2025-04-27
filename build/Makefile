@@ -351,6 +351,19 @@ ex_src__exercises__4_1_c/fast:
 .PHONY : ex_src__exercises__4_1_c/fast
 
 #=============================================================================
+# Target rules for targets named ex_src__exercises__4_14_c
+
+# Build rule for target.
+ex_src__exercises__4_14_c: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex_src__exercises__4_14_c
+.PHONY : ex_src__exercises__4_14_c
+
+# fast build rule for target.
+ex_src__exercises__4_14_c/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__4_14_c.dir/build.make CMakeFiles/ex_src__exercises__4_14_c.dir/build
+.PHONY : ex_src__exercises__4_14_c/fast
+
+#=============================================================================
 # Target rules for targets named ex_src__exercises__4_2_c
 
 # Build rule for target.
@@ -784,6 +797,30 @@ src/exercises/4.1.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__4_1_c.dir/build.make CMakeFiles/ex_src__exercises__4_1_c.dir/src/exercises/4.1.c.s
 .PHONY : src/exercises/4.1.c.s
 
+src/exercises/4.14.o: src/exercises/4.14.c.o
+.PHONY : src/exercises/4.14.o
+
+# target to build an object file
+src/exercises/4.14.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__4_14_c.dir/build.make CMakeFiles/ex_src__exercises__4_14_c.dir/src/exercises/4.14.c.o
+.PHONY : src/exercises/4.14.c.o
+
+src/exercises/4.14.i: src/exercises/4.14.c.i
+.PHONY : src/exercises/4.14.i
+
+# target to preprocess a source file
+src/exercises/4.14.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__4_14_c.dir/build.make CMakeFiles/ex_src__exercises__4_14_c.dir/src/exercises/4.14.c.i
+.PHONY : src/exercises/4.14.c.i
+
+src/exercises/4.14.s: src/exercises/4.14.c.s
+.PHONY : src/exercises/4.14.s
+
+# target to generate assembly for a file
+src/exercises/4.14.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex_src__exercises__4_14_c.dir/build.make CMakeFiles/ex_src__exercises__4_14_c.dir/src/exercises/4.14.c.s
+.PHONY : src/exercises/4.14.c.s
+
 src/exercises/4.2.o: src/exercises/4.2.c.o
 .PHONY : src/exercises/4.2.o
 
@@ -880,6 +917,30 @@ src/lib/asserts.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/asserts.c.s
 .PHONY : src/lib/asserts.c.s
 
+src/lib/buffered_reader.o: src/lib/buffered_reader.c.o
+.PHONY : src/lib/buffered_reader.o
+
+# target to build an object file
+src/lib/buffered_reader.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/buffered_reader.c.o
+.PHONY : src/lib/buffered_reader.c.o
+
+src/lib/buffered_reader.i: src/lib/buffered_reader.c.i
+.PHONY : src/lib/buffered_reader.i
+
+# target to preprocess a source file
+src/lib/buffered_reader.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/buffered_reader.c.i
+.PHONY : src/lib/buffered_reader.c.i
+
+src/lib/buffered_reader.s: src/lib/buffered_reader.c.s
+.PHONY : src/lib/buffered_reader.s
+
+# target to generate assembly for a file
+src/lib/buffered_reader.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/buffered_reader.c.s
+.PHONY : src/lib/buffered_reader.c.s
+
 src/lib/char_utils.o: src/lib/char_utils.c.o
 .PHONY : src/lib/char_utils.o
 
@@ -951,6 +1012,54 @@ src/lib/iolib.s: src/lib/iolib.c.s
 src/lib/iolib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/iolib.c.s
 .PHONY : src/lib/iolib.c.s
+
+src/lib/linked_list.o: src/lib/linked_list.c.o
+.PHONY : src/lib/linked_list.o
+
+# target to build an object file
+src/lib/linked_list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/linked_list.c.o
+.PHONY : src/lib/linked_list.c.o
+
+src/lib/linked_list.i: src/lib/linked_list.c.i
+.PHONY : src/lib/linked_list.i
+
+# target to preprocess a source file
+src/lib/linked_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/linked_list.c.i
+.PHONY : src/lib/linked_list.c.i
+
+src/lib/linked_list.s: src/lib/linked_list.c.s
+.PHONY : src/lib/linked_list.s
+
+# target to generate assembly for a file
+src/lib/linked_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/linked_list.c.s
+.PHONY : src/lib/linked_list.c.s
+
+src/lib/queue.o: src/lib/queue.c.o
+.PHONY : src/lib/queue.o
+
+# target to build an object file
+src/lib/queue.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/queue.c.o
+.PHONY : src/lib/queue.c.o
+
+src/lib/queue.i: src/lib/queue.c.i
+.PHONY : src/lib/queue.i
+
+# target to preprocess a source file
+src/lib/queue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/queue.c.i
+.PHONY : src/lib/queue.c.i
+
+src/lib/queue.s: src/lib/queue.c.s
+.PHONY : src/lib/queue.s
+
+# target to generate assembly for a file
+src/lib/queue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/lib/queue.c.s
+.PHONY : src/lib/queue.c.s
 
 src/lib/stack.o: src/lib/stack.c.o
 .PHONY : src/lib/stack.o
@@ -1025,6 +1134,7 @@ help:
 	@echo "... ex_src__exercises__3_4_c"
 	@echo "... ex_src__exercises__3_5_c"
 	@echo "... ex_src__exercises__3_6_c"
+	@echo "... ex_src__exercises__4_14_c"
 	@echo "... ex_src__exercises__4_1_c"
 	@echo "... ex_src__exercises__4_2_c"
 	@echo "... ex_src__exercises__4_3_c"
@@ -1079,6 +1189,9 @@ help:
 	@echo "... src/exercises/4.1.o"
 	@echo "... src/exercises/4.1.i"
 	@echo "... src/exercises/4.1.s"
+	@echo "... src/exercises/4.14.o"
+	@echo "... src/exercises/4.14.i"
+	@echo "... src/exercises/4.14.s"
 	@echo "... src/exercises/4.2.o"
 	@echo "... src/exercises/4.2.i"
 	@echo "... src/exercises/4.2.s"
@@ -1091,6 +1204,9 @@ help:
 	@echo "... src/lib/asserts.o"
 	@echo "... src/lib/asserts.i"
 	@echo "... src/lib/asserts.s"
+	@echo "... src/lib/buffered_reader.o"
+	@echo "... src/lib/buffered_reader.i"
+	@echo "... src/lib/buffered_reader.s"
 	@echo "... src/lib/char_utils.o"
 	@echo "... src/lib/char_utils.i"
 	@echo "... src/lib/char_utils.s"
@@ -1100,6 +1216,12 @@ help:
 	@echo "... src/lib/iolib.o"
 	@echo "... src/lib/iolib.i"
 	@echo "... src/lib/iolib.s"
+	@echo "... src/lib/linked_list.o"
+	@echo "... src/lib/linked_list.i"
+	@echo "... src/lib/linked_list.s"
+	@echo "... src/lib/queue.o"
+	@echo "... src/lib/queue.i"
+	@echo "... src/lib/queue.s"
 	@echo "... src/lib/stack.o"
 	@echo "... src/lib/stack.i"
 	@echo "... src/lib/stack.s"

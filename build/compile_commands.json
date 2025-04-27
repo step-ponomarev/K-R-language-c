@@ -13,6 +13,12 @@
 },
 {
   "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/common.dir/src/lib/buffered_reader.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/buffered_reader.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/lib/buffered_reader.c",
+  "output": "CMakeFiles/common.dir/src/lib/buffered_reader.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
   "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/common.dir/src/lib/char_utils.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/char_utils.c",
   "file": "/Users/stepan.ponomarev/K-R-language-c/src/lib/char_utils.c",
   "output": "CMakeFiles/common.dir/src/lib/char_utils.c.o"
@@ -28,6 +34,18 @@
   "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/common.dir/src/lib/iolib.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/iolib.c",
   "file": "/Users/stepan.ponomarev/K-R-language-c/src/lib/iolib.c",
   "output": "CMakeFiles/common.dir/src/lib/iolib.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/common.dir/src/lib/linked_list.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/linked_list.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/lib/linked_list.c",
+  "output": "CMakeFiles/common.dir/src/lib/linked_list.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/common.dir/src/lib/queue.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/queue.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/lib/queue.c",
+  "output": "CMakeFiles/common.dir/src/lib/queue.c.o"
 },
 {
   "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
@@ -142,6 +160,12 @@
   "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__4_1_c.dir/src/exercises/4.1.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/4.1.c",
   "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/4.1.c",
   "output": "CMakeFiles/ex_src__exercises__4_1_c.dir/src/exercises/4.1.c.o"
+},
+{
+  "directory": "/Users/stepan.ponomarev/K-R-language-c/build",
+  "command": "/usr/bin/cc  -I/Users/stepan.ponomarev/K-R-language-c/src/lib  -arch arm64 -o CMakeFiles/ex_src__exercises__4_14_c.dir/src/exercises/4.14.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/exercises/4.14.c",
+  "file": "/Users/stepan.ponomarev/K-R-language-c/src/exercises/4.14.c",
+  "output": "CMakeFiles/ex_src__exercises__4_14_c.dir/src/exercises/4.14.c.o"
 },
 {
   "directory": "/Users/stepan.ponomarev/K-R-language-c/build",

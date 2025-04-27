@@ -100,10 +100,24 @@ CMakeFiles/common.dir/src/lib/asserts.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/common.dir/src/lib/asserts.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/stepan.ponomarev/K-R-language-c/src/lib/asserts.c -o CMakeFiles/common.dir/src/lib/asserts.c.s
 
+CMakeFiles/common.dir/src/lib/buffered_reader.c.o: CMakeFiles/common.dir/flags.make
+CMakeFiles/common.dir/src/lib/buffered_reader.c.o: /Users/stepan.ponomarev/K-R-language-c/src/lib/buffered_reader.c
+CMakeFiles/common.dir/src/lib/buffered_reader.c.o: CMakeFiles/common.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/common.dir/src/lib/buffered_reader.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/common.dir/src/lib/buffered_reader.c.o -MF CMakeFiles/common.dir/src/lib/buffered_reader.c.o.d -o CMakeFiles/common.dir/src/lib/buffered_reader.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/buffered_reader.c
+
+CMakeFiles/common.dir/src/lib/buffered_reader.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/common.dir/src/lib/buffered_reader.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/stepan.ponomarev/K-R-language-c/src/lib/buffered_reader.c > CMakeFiles/common.dir/src/lib/buffered_reader.c.i
+
+CMakeFiles/common.dir/src/lib/buffered_reader.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/common.dir/src/lib/buffered_reader.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/stepan.ponomarev/K-R-language-c/src/lib/buffered_reader.c -o CMakeFiles/common.dir/src/lib/buffered_reader.c.s
+
 CMakeFiles/common.dir/src/lib/char_utils.c.o: CMakeFiles/common.dir/flags.make
 CMakeFiles/common.dir/src/lib/char_utils.c.o: /Users/stepan.ponomarev/K-R-language-c/src/lib/char_utils.c
 CMakeFiles/common.dir/src/lib/char_utils.c.o: CMakeFiles/common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/common.dir/src/lib/char_utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/common.dir/src/lib/char_utils.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/common.dir/src/lib/char_utils.c.o -MF CMakeFiles/common.dir/src/lib/char_utils.c.o.d -o CMakeFiles/common.dir/src/lib/char_utils.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/char_utils.c
 
 CMakeFiles/common.dir/src/lib/char_utils.c.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/common.dir/src/lib/char_utils.c.s: cmake_force
 CMakeFiles/common.dir/src/lib/hash_map.c.o: CMakeFiles/common.dir/flags.make
 CMakeFiles/common.dir/src/lib/hash_map.c.o: /Users/stepan.ponomarev/K-R-language-c/src/lib/hash_map.c
 CMakeFiles/common.dir/src/lib/hash_map.c.o: CMakeFiles/common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/common.dir/src/lib/hash_map.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/common.dir/src/lib/hash_map.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/common.dir/src/lib/hash_map.c.o -MF CMakeFiles/common.dir/src/lib/hash_map.c.o.d -o CMakeFiles/common.dir/src/lib/hash_map.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/hash_map.c
 
 CMakeFiles/common.dir/src/lib/hash_map.c.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/common.dir/src/lib/hash_map.c.s: cmake_force
 CMakeFiles/common.dir/src/lib/iolib.c.o: CMakeFiles/common.dir/flags.make
 CMakeFiles/common.dir/src/lib/iolib.c.o: /Users/stepan.ponomarev/K-R-language-c/src/lib/iolib.c
 CMakeFiles/common.dir/src/lib/iolib.c.o: CMakeFiles/common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/common.dir/src/lib/iolib.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/common.dir/src/lib/iolib.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/common.dir/src/lib/iolib.c.o -MF CMakeFiles/common.dir/src/lib/iolib.c.o.d -o CMakeFiles/common.dir/src/lib/iolib.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/iolib.c
 
 CMakeFiles/common.dir/src/lib/iolib.c.i: cmake_force
@@ -142,10 +156,38 @@ CMakeFiles/common.dir/src/lib/iolib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/common.dir/src/lib/iolib.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/stepan.ponomarev/K-R-language-c/src/lib/iolib.c -o CMakeFiles/common.dir/src/lib/iolib.c.s
 
+CMakeFiles/common.dir/src/lib/linked_list.c.o: CMakeFiles/common.dir/flags.make
+CMakeFiles/common.dir/src/lib/linked_list.c.o: /Users/stepan.ponomarev/K-R-language-c/src/lib/linked_list.c
+CMakeFiles/common.dir/src/lib/linked_list.c.o: CMakeFiles/common.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/common.dir/src/lib/linked_list.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/common.dir/src/lib/linked_list.c.o -MF CMakeFiles/common.dir/src/lib/linked_list.c.o.d -o CMakeFiles/common.dir/src/lib/linked_list.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/linked_list.c
+
+CMakeFiles/common.dir/src/lib/linked_list.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/common.dir/src/lib/linked_list.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/stepan.ponomarev/K-R-language-c/src/lib/linked_list.c > CMakeFiles/common.dir/src/lib/linked_list.c.i
+
+CMakeFiles/common.dir/src/lib/linked_list.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/common.dir/src/lib/linked_list.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/stepan.ponomarev/K-R-language-c/src/lib/linked_list.c -o CMakeFiles/common.dir/src/lib/linked_list.c.s
+
+CMakeFiles/common.dir/src/lib/queue.c.o: CMakeFiles/common.dir/flags.make
+CMakeFiles/common.dir/src/lib/queue.c.o: /Users/stepan.ponomarev/K-R-language-c/src/lib/queue.c
+CMakeFiles/common.dir/src/lib/queue.c.o: CMakeFiles/common.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/common.dir/src/lib/queue.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/common.dir/src/lib/queue.c.o -MF CMakeFiles/common.dir/src/lib/queue.c.o.d -o CMakeFiles/common.dir/src/lib/queue.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/queue.c
+
+CMakeFiles/common.dir/src/lib/queue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/common.dir/src/lib/queue.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/stepan.ponomarev/K-R-language-c/src/lib/queue.c > CMakeFiles/common.dir/src/lib/queue.c.i
+
+CMakeFiles/common.dir/src/lib/queue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/common.dir/src/lib/queue.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/stepan.ponomarev/K-R-language-c/src/lib/queue.c -o CMakeFiles/common.dir/src/lib/queue.c.s
+
 CMakeFiles/common.dir/src/lib/stack.c.o: CMakeFiles/common.dir/flags.make
 CMakeFiles/common.dir/src/lib/stack.c.o: /Users/stepan.ponomarev/K-R-language-c/src/lib/stack.c
 CMakeFiles/common.dir/src/lib/stack.c.o: CMakeFiles/common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/common.dir/src/lib/stack.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/common.dir/src/lib/stack.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/common.dir/src/lib/stack.c.o -MF CMakeFiles/common.dir/src/lib/stack.c.o.d -o CMakeFiles/common.dir/src/lib/stack.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/stack.c
 
 CMakeFiles/common.dir/src/lib/stack.c.i: cmake_force
@@ -159,7 +201,7 @@ CMakeFiles/common.dir/src/lib/stack.c.s: cmake_force
 CMakeFiles/common.dir/src/lib/stringutils.c.o: CMakeFiles/common.dir/flags.make
 CMakeFiles/common.dir/src/lib/stringutils.c.o: /Users/stepan.ponomarev/K-R-language-c/src/lib/stringutils.c
 CMakeFiles/common.dir/src/lib/stringutils.c.o: CMakeFiles/common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/common.dir/src/lib/stringutils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/common.dir/src/lib/stringutils.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/common.dir/src/lib/stringutils.c.o -MF CMakeFiles/common.dir/src/lib/stringutils.c.o.d -o CMakeFiles/common.dir/src/lib/stringutils.c.o -c /Users/stepan.ponomarev/K-R-language-c/src/lib/stringutils.c
 
 CMakeFiles/common.dir/src/lib/stringutils.c.i: cmake_force
@@ -174,9 +216,12 @@ CMakeFiles/common.dir/src/lib/stringutils.c.s: cmake_force
 common_OBJECTS = \
 "CMakeFiles/common.dir/src/lib/array_list.c.o" \
 "CMakeFiles/common.dir/src/lib/asserts.c.o" \
+"CMakeFiles/common.dir/src/lib/buffered_reader.c.o" \
 "CMakeFiles/common.dir/src/lib/char_utils.c.o" \
 "CMakeFiles/common.dir/src/lib/hash_map.c.o" \
 "CMakeFiles/common.dir/src/lib/iolib.c.o" \
+"CMakeFiles/common.dir/src/lib/linked_list.c.o" \
+"CMakeFiles/common.dir/src/lib/queue.c.o" \
 "CMakeFiles/common.dir/src/lib/stack.c.o" \
 "CMakeFiles/common.dir/src/lib/stringutils.c.o"
 
@@ -185,14 +230,17 @@ common_EXTERNAL_OBJECTS =
 
 libcommon.a: CMakeFiles/common.dir/src/lib/array_list.c.o
 libcommon.a: CMakeFiles/common.dir/src/lib/asserts.c.o
+libcommon.a: CMakeFiles/common.dir/src/lib/buffered_reader.c.o
 libcommon.a: CMakeFiles/common.dir/src/lib/char_utils.c.o
 libcommon.a: CMakeFiles/common.dir/src/lib/hash_map.c.o
 libcommon.a: CMakeFiles/common.dir/src/lib/iolib.c.o
+libcommon.a: CMakeFiles/common.dir/src/lib/linked_list.c.o
+libcommon.a: CMakeFiles/common.dir/src/lib/queue.c.o
 libcommon.a: CMakeFiles/common.dir/src/lib/stack.c.o
 libcommon.a: CMakeFiles/common.dir/src/lib/stringutils.c.o
 libcommon.a: CMakeFiles/common.dir/build.make
 libcommon.a: CMakeFiles/common.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C static library libcommon.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/stepan.ponomarev/K-R-language-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C static library libcommon.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/common.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/common.dir/link.txt --verbose=$(VERBOSE)
 
