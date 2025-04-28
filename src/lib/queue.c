@@ -1,7 +1,6 @@
 #include "queue.h"
 #include "linked_list.h"
 #include <stddef.h>
-#include <stdio.h>
 #include <stdlib.h>
 
 #define INIT_CAPACITY 16
