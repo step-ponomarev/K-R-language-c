@@ -24,15 +24,16 @@ int day_of_year(unsigned int year, unsigned int month, unsigned int day) {
 
 void month_day(int year, int yearday, int *pmonth, int *pday) {
   const int leap = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+  char *days = daytab[leap];
+  days++;
 
-  int i = 1;
   while (yearday > 0) {
-    yearday -= daytab[leap][i++];
+    yearday -= *days++;
   }
-  yearday += daytab[leap][i - 1];
+  yearday += *(days - 1);
 
   *pday = yearday;
-  *pmonth = i;
+  *pmonth = days - daytab[leap];
 }
 
 int main() {
