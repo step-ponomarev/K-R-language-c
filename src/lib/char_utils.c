@@ -23,6 +23,20 @@ int lengthOf(char str[]) {
   return i;
 }
 
+int copy_string(const char src[], char **dest) {
+  int len = 0;
+  while (src[len] != '\0') {
+    len++;
+  }
+
+  *dest = malloc(sizeof(char) * (len + 1));
+  for (int i = 0; i <= len; i++) {
+    (*dest)[i] = src[i];
+  }
+
+  return len;
+}
+
 // 12345 [1, 3]
 char *substring(char *line, int startIndex, int endIndex) {
   int stirngLen = endIndex - startIndex;

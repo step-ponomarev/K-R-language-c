@@ -36,7 +36,7 @@ int readline(char *dist) {
   return i;
 }
 
-int readWord(char *dist) {
+int read_word(char *dist) {
   if (!dist) {
     return -1;
   }

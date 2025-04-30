@@ -2,7 +2,6 @@
 #include "../lib/hash_map.h"
 #include "../lib/iolib.h"
 #include "../lib/stack.h"
-#include "map.h"
 #include "math.h"
 #include "stdio.h"
 #include "stdlib.h"
@@ -46,7 +45,7 @@ int main() {
 
   Stack *stack = create_stack(sizeof(Token));
   Map *map = map_create();
-  while ((len = readWord(wrd)) > 0) {
+  while ((len = read_word(wrd)) > 0) {
     Token token = parse_token(wrd, len);
     if (token.type == DIGIT || token.type == VARIABLE) {
       stack_add(stack, &token);
