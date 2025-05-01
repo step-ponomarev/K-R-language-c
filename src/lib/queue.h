@@ -13,5 +13,6 @@ void queue_add_at_start(const Queue *, const void *);
 void queue_poll(const Queue *, void *);
 
 size_t queue_size(const Queue *);
+char queue_is_empty(const Queue *);
 
 #endif

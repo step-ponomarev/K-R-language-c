@@ -37,3 +37,5 @@ void queue_add_at_start(const Queue *queue, const void *elem) {
 }
 
 size_t queue_size(const Queue *queue) { return list_size(queue->list); }
+
+char queue_is_empty(const Queue *queue) { return list_size(queue->list) == 0; }
