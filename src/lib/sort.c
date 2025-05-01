@@ -4,15 +4,15 @@
 #include <stdlib.h>
 
 void swap(void *, const size_t, const size_t, const size_t);
-void _qsort(void *, const size_t, int, int, compareFn *);
+void _qsort(void *, const size_t, int, int, Comparator *);
 
 void qsort(void *base, const size_t elem_size, const size_t size,
-           compareFn *comp) {
+           Comparator *comp) {
   _qsort(base, elem_size, 0, size - 1, comp);
 }
 
 void _qsort(void *base, size_t elem_size, int left, int right,
-            compareFn *comp) {
+            Comparator *comp) {
   if (left >= right) {
     return;
   }

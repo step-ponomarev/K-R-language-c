@@ -19,7 +19,7 @@ int sortShars(char *ch, char *ch2) { return compareInts(*ch, *ch2); }
 void testDigitsSort() {
   const size_t size = 8;
   int value[size] = {11, -120, 200, 6, 5, 3, 2, 0};
-  qsort((void *)value, sizeof(int), size, (compareFn *)&sortDigits);
+  qsort((void *)value, sizeof(int), size, (Comparator *)&sortDigits);
 
   char isSorted = 1;
   for (int i = 1; i < 8; i++) {
@@ -32,7 +32,7 @@ void testDigitsSort() {
 void testSortString() {
   const size_t size = 8;
   char value[size] = {'g', 'a', 'b', 'e', 'h', 'd', 'c', 'f'};
-  qsort((void *)value, sizeof(char), size, (compareFn *)&sortShars);
+  qsort((void *)value, sizeof(char), size, (Comparator *)&sortShars);
 
   char isSorted = 1;
   for (int i = 1; i < 8; i++) {
@@ -48,7 +48,7 @@ void testSortStrings() {
   char value[size][string_size] = {"321", "123456789", "0",
                                    "sjadklsadjlkdsajadksljsadklsajd"};
 
-  qsort(value, string_size, size, (compareFn *)&string_compare);
+  qsort(value, string_size, size, (Comparator *)&string_compare);
 
   char isSorted = 1;
   for (int i = 1; i < size; i++) {

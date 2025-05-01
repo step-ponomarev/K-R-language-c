@@ -3,8 +3,8 @@
 
 #include <stddef.h>
 
-typedef int compareFn(const void *, const void *);
+typedef int Comparator(const void *, const void *);
 
-void qsort(void *, const size_t, const size_t, compareFn *);
+void qsort(void *, const size_t, const size_t, Comparator *);
 
 #endif

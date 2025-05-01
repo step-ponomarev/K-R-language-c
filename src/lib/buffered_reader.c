@@ -45,10 +45,15 @@ void buffered_reader_unget_char(BufferedReader *reader, const int ch) {
   queue_add_at_start(reader->queue, &ch);
 }
 
-void buffered_reader_get_line(BufferedReader *reader, char **dest) {
+int buffered_reader_get_line(BufferedReader *reader, char *dest,
+                             const size_t limit) {
   fill_buffer(reader);
   if (reader_size(reader) == 0 || reader->eof) {
-    return;
+    return 0;
+  }
+
+  if (limit == 0) {
+    return 0;
   }
 
   Queue *line = queue_create(sizeof(char));
@@ -56,27 +61,28 @@ void buffered_reader_get_line(BufferedReader *reader, char **dest) {
   int ch;
   do {
     ch = buffered_reader_get_char(reader);
-    if (ch == EOF || ch == '\0') {
+    if (ch == EOF || ch == '\0' || ch == '\n') {
       break;
     }
-    queue_add(line, &ch);
 
-    if (ch == '\n') {
-      break;
-    }
-  } while (reader_size(reader) > 0);
+    queue_add(line, &ch);
+  } while (reader_size(reader) > 0 && queue_size(line) < limit - 1);
+
+  if (queue_is_empty(line)) {
+    queue_destroy(line);
+    return 0;
+  }
 
   const int end = '\0';
   queue_add(line, &end);
 
   const int size = queue_size(line);
-  char *newLine = malloc(sizeof(char) * size);
   for (int i = 0; i < size; i++) {
-    queue_poll(line, &newLine[i]);
+    queue_poll(line, &dest[i]);
   }
-
-  *dest = newLine;
   queue_destroy(line);
+
+  return size;
 }
 
 void buffered_reader_unget_string(const BufferedReader *reader,
@@ -91,6 +97,10 @@ void buffered_reader_unget_string(const BufferedReader *reader,
   }
 }
 
+char buffered_reader_is_eof(const BufferedReader *reader) {
+  return reader->eof && queue_size(reader->queue) <= 1;
+}
+
 void fill_buffer(BufferedReader *reader) {
   if (!is_need_fill_buffer(reader)) {
     return;
@@ -99,9 +109,10 @@ void fill_buffer(BufferedReader *reader) {
   int ch;
   do {
     ch = getchar();
-    queue_add(reader->queue, &ch);
     if (ch == EOF) {
       reader->eof = TRUE;
+    } else {
+      queue_add(reader->queue, &ch);
     }
   } while (ch != EOF && ch != '\n');
 }
