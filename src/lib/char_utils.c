@@ -1,5 +1,4 @@
 #include "char_utils.h"
-#include "stdio.h"
 #include "stdlib.h"
 
 char isEmpty(char ch) { return ch == ' ' || ch == '\t' || ch == '\n'; }
@@ -13,6 +12,16 @@ char isEquals(const char s1[], const char s2[]) {
   }
 
   return res;
+}
+
+int string_compare(const char *s1, const char *s2) {
+  for (; *s1 == *s2; s1++, s2++) {
+    if (*s1 == '\0') {
+      return 0;
+    }
+  }
+
+  return *s1 < *s2 ? -1 : 1;
 }
 
 int lengthOf(char str[]) {
