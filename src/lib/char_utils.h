@@ -8,6 +8,7 @@ int lengthOf(char[]);
 int copy_string(const char src[], char **dest);
 
 int string_compare(const char *, const char *);
+int string_compare_ignore_register(const char *, const char *);
 
 char *substring(char *line, int startIndex, int endIndex);
 char *trim(char *line);

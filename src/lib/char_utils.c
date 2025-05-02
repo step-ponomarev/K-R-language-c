@@ -24,6 +24,31 @@ int string_compare(const char *s1, const char *s2) {
   return *s1 < *s2 ? -1 : 1;
 }
 
+char toCapital(const char ch) {
+  return (ch >= 'a' && ch <= 'z' ? (ch - 'a' + 'A') : ch);
+}
+
+char char_compare_ignore_case(const char ch1, const char ch2) {
+  const char Ch1 = toCapital(ch1);
+  const char Ch2 = toCapital(ch2);
+
+  if (Ch1 == Ch2) {
+    return 0;
+  }
+
+  return Ch1 < Ch2 ? -1 : 1;
+}
+
+int string_compare_ignore_register(const char *s1, const char *s2) {
+  for (; char_compare_ignore_case(*s1, *s2) == 0; s1++, s2++) {
+    if (*s1 == '\0') {
+      return 0;
+    }
+  }
+
+  return char_compare_ignore_case(*s1, *s2);
+}
+
 int lengthOf(char str[]) {
   int i = 0;
   while (str[i++] != '\0') {
