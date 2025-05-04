@@ -15,6 +15,7 @@ typedef enum TokenType {
 typedef struct Token {
   char val[MAX_TOKEN_LEN];
   TokenType type;
+  size_t size;
 } Token;
 
 List *read_tokens();

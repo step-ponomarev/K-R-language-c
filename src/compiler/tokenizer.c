@@ -1,9 +1,12 @@
 #include "tokenizer.h"
 #include "../lib/char_utils.h"
 #include "stdio.h"
+#include <stdio.h>
 
 char is_single_token(const char);
 char is_keyword(const char *);
+void skip_line();
+void skip_comment_block();
 
 Token to_token(const char *, const size_t);
 
@@ -11,9 +14,26 @@ List *read_tokens() {
   List *tokens = list_create(sizeof(Token));
 
   int ch;
-  while ((ch = getchar()) != EOF) {
+  int buf = -1;
+  while ((ch = (buf == -1) ? getchar() : buf) != EOF) {
+    buf = -1;
     if (isEmpty(ch)) {
       continue;
+    }
+
+    if (ch == '/') {
+      buf = getchar();
+      if (buf == '/') {
+        skip_line();
+        buf = -1;
+        continue;
+      }
+
+      if (buf == '*') {
+        skip_comment_block();
+        buf = -1;
+        continue;
+      }
     }
 
     if (is_single_token(ch)) {
@@ -44,6 +64,26 @@ List *read_tokens() {
   return tokens;
 }
 
+void skip_comment_block() {
+  int ch;
+  while ((ch = getchar()) != EOF) {
+    if (ch != '*') {
+      continue;
+    }
+
+    int tmp = getchar();
+    if (tmp == '/') {
+      break;
+    }
+  }
+}
+
+void skip_line() {
+  int ch;
+  while ((ch = getchar()) != '\n' && ch != EOF) {
+  }
+}
+
 char is_single_token(const char ch) {
   return ch == '(' || ch == ')' || ch == '[' || ch == ']' || ch == '*' ||
          ch == ',';
@@ -61,6 +101,7 @@ Token to_token(const char *value, const size_t len) {
     token.val[i] = value[i];
   }
   token.val[len] = '\0';
+  token.size = len + 1;
 
   if (isDigit(value[0])) {
     token.type = DIGIT;

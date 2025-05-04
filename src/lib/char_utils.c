@@ -1,17 +1,17 @@
 #include "char_utils.h"
 #include "stdlib.h"
+#include <stdio.h>
 
 char isEmpty(char ch) { return ch == ' ' || ch == '\t' || ch == '\n'; }
 
-char isEquals(const char s1[], const char s2[]) {
-  char res = 1;
-
-  int i = 0;
-  while ((res = s1[i] == s2[i]) && (s1[i] != '\0')) {
-    i++;
+char isEquals(const char *s1, const char *s2) {
+  for (; *s1 == *s2; s1++, s2++) {
+    if (*s1 == '\0') {
+      return 1;
+    }
   }
 
-  return res;
+  return 0;
 }
 
 int string_compare(const char *s1, const char *s2) {
@@ -71,7 +71,7 @@ int copy_string(const char src[], char **dest) {
   return len;
 }
 
-// 12345 [1, 3]
+// 12345 [1, 3)
 char *substring(char *line, int startIndex, int endIndex) {
   int stirngLen = endIndex - startIndex;
 

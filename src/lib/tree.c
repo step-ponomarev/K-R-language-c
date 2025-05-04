@@ -1,15 +1,15 @@
 #include "tree.h"
 #include <stddef.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 struct Tree {
   TreeNode *root;
   size_t size;
-  size_t deep;
 };
 
-int add_node(TreeNode *, const void *, const size_t);
+char add_node(TreeNode *, const void *, const size_t);
 TreeNode *create_node(const void *, const size_t);
 int compare(const char *, const size_t, const char *, const size_t);
 void destroy_node(TreeNode *);
@@ -17,7 +17,6 @@ void destroy_node(TreeNode *);
 Tree *tree_create() {
   Tree *tree = malloc(sizeof(Tree));
   tree->size = 0;
-  tree->deep = 0;
 
   return tree;
 }
@@ -46,39 +45,38 @@ void tree_add(Tree *tree, const void *val, const size_t size) {
     return;
   }
 
-  TreeNode *root = tree->root;
-  const int deep = add_node(root, val, size);
-  if (deep == -1) { // already added
+  if (!add_node(tree->root, val, size)) { // already added
     return;
   }
 
   tree->size++;
-  if (deep > tree->deep) {
-    tree->deep = deep;
-  }
+  // if (deep > tree->deep) {
+  //  tree->deep = deep;
+  // }
 
   // TODO: реализовать норм всплытие
-  if (tree->size / 2 < deep) {
-    const char rotate_right =
-        compare(root->value.value, root->value.size, val, size) < 0;
+  //
+  /*  if (tree->size / 2 < deep) {
+      const char rotate_right =
+          compare(root->value.value, root->value.size, val, size) < 0;
 
-    TreeNode *new_root;
-    if (rotate_right) { // right is deeper
-      new_root = root->right;
-      tree->root->right = new_root->left;
-      new_root->left = tree->root;
+      TreeNode *new_root;
+      if (rotate_right) { // right is deeper
+        new_root = root->right;
+        tree->root->right = new_root->left;
+        new_root->left = tree->root;
 
-      tree->root = new_root;
-    } else { // left is depere
-      new_root = root->left;
-      tree->root->left = new_root->right;
-      new_root->right = tree->root;
+        tree->root = new_root;
+      } else { // left is depere
+        new_root = root->left;
+        tree->root->left = new_root->right;
+        new_root->right = tree->root;
 
-      tree->root = new_root;
-    }
+        tree->root = new_root;
+      }
 
-    tree->deep--;
-  }
+      tree->deep--;
+    } */
 }
 
 size_t tree_size(const Tree *t) { return t->size; }
@@ -88,17 +86,17 @@ size_t tree_size(const Tree *t) { return t->size; }
  * Rreturns deep of added node, if exists return -1;
  *
  * */
-int add_node(TreeNode *node, const void *curr_val, const size_t size) {
-  const size_t compared =
+char add_node(TreeNode *node, const void *curr_val, const size_t size) {
+  const char compared =
       compare(node->value.value, node->value.size, curr_val, size);
 
   if (compared == 0) {
-    return -1;
+    return 0;
   }
 
   if (compared == -1) {
     if (node->right != NULL) {
-      return 1 + add_node(node->right, curr_val, size);
+      return add_node(node->right, curr_val, size);
     }
 
     node->right = create_node(curr_val, size);
@@ -106,7 +104,7 @@ int add_node(TreeNode *node, const void *curr_val, const size_t size) {
   }
 
   if (node->left != NULL) {
-    return 1 + add_node(node->left, curr_val, size);
+    return add_node(node->left, curr_val, size);
   }
 
   node->left = create_node(curr_val, size);
@@ -118,6 +116,7 @@ TreeNode *tree_get_root(const Tree *tree) { return tree->root; }
 TreeNode *create_node(const void *val, const size_t size) {
   TreeNode *node = malloc(sizeof(TreeNode));
   node->value.value = malloc(size);
+  node->value.size = size;
   memcpy(node->value.value, val, size);
   node->left = NULL;
   node->right = NULL;

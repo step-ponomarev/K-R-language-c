@@ -3,7 +3,7 @@
 
 char isEmpty(char);
 char isDigit(char);
-char isEquals(const char[], const char[]);
+char isEquals(const char *, const char *);
 int lengthOf(char[]);
 int copy_string(const char src[], char **dest);
 
