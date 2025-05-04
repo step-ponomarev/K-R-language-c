@@ -39,11 +39,12 @@ typedef struct Node {
 } Node;
 
 int get_hash(const char val[], const size_t size);
-char isKeysEqual(const char *key1, const char *key2, const size_t size);
-char findNode(const Map *map, const MapNodeKey key, Node *dest);
+char are_keys_equal(const char *key1, const char *key2, const size_t size);
+char find_node(const Map *map, const MapNodeKey key, Node *dest);
 MapNodeKey convert_to_node_key(const MapEntry key);
-int findNodeIndex(const Map *map, const MapNodeKey key, List **dest);
-void free_node(Node);
+MapEntry convert_to_map_entry(const MapNodeKey);
+int find_node_index(const Map *map, const MapNodeKey key, List **dest);
+void map_free_node(Node);
 
 Map *map_create() {
   Map *map = malloc(sizeof(Map));
@@ -64,7 +65,7 @@ void map_destroy(Map *map) {
     for (int i = 0; i < bucketSize; i++) {
       Node node;
       list_get_by_index(currBacket, i, &node);
-      free_node(node);
+      map_free_node(node);
     }
 
     list_destroy(map->buckets[i]);
@@ -84,7 +85,7 @@ void map_put(Map *map, const MapEntry key, const MapEntry value) {
   const Node node = {.key = nodeKey, .value = nodeValue};
 
   List *bucket;
-  const int i = findNodeIndex(map, nodeKey, &bucket);
+  const int i = find_node_index(map, nodeKey, &bucket);
   if (i == -1) {
     bucket = map->buckets[(map->bucket_count - 1) & nodeKey.hash];
     list_add(bucket, &node);
@@ -92,7 +93,7 @@ void map_put(Map *map, const MapEntry key, const MapEntry value) {
   } else {
     Node oldNode;
     list_get_by_index(bucket, i, &oldNode);
-    free_node(oldNode);
+    map_free_node(oldNode);
 
     list_replace(bucket, i, &node);
   }
@@ -100,7 +101,7 @@ void map_put(Map *map, const MapEntry key, const MapEntry value) {
 
 void map_get(const Map *map, const MapEntry key, void *dest) {
   Node node;
-  if (!findNode(map, convert_to_node_key(key), &node)) {
+  if (!find_node(map, convert_to_node_key(key), &node)) {
     return;
   }
 
@@ -109,7 +110,7 @@ void map_get(const Map *map, const MapEntry key, void *dest) {
 
 char map_contains_key(const Map *map, const MapEntry key) {
   Node node;
-  if (!findNode(map, convert_to_node_key(key), &node)) {
+  if (!find_node(map, convert_to_node_key(key), &node)) {
     return 0;
   }
 
@@ -120,7 +121,7 @@ char map_remove(Map *map, const MapEntry key) {
   List *bucket;
 
   const MapNodeKey nodeKey = convert_to_node_key(key);
-  const int index = findNodeIndex(map, nodeKey, &bucket);
+  const int index = find_node_index(map, nodeKey, &bucket);
   if (index == -1) {
     return 0;
   }
@@ -131,12 +132,33 @@ char map_remove(Map *map, const MapEntry key) {
   return 1;
 }
 
+List *map_get_keys(const Map *map) {
+  List *keys = list_create(sizeof(MapEntry));
+  for (int i = 0; i < map->bucket_count; i++) {
+    const List *bucket = map->buckets[i];
+    const size_t bucket_size = list_size(bucket);
+    if (bucket_size == 0) {
+      continue;
+    }
+
+    for (int i = 0; i < bucket_size; i++) {
+      Node node;
+      list_get_by_index(bucket, i, &node);
+
+      const MapEntry e = convert_to_map_entry(node.key);
+      list_add(keys, &e);
+    }
+  }
+
+  return keys;
+}
+
 int map_size(const Map *map) { return map->element_count; }
 
-char findNode(const Map *map, const MapNodeKey key, Node *dest) {
+char find_node(const Map *map, const MapNodeKey key, Node *dest) {
   List *bucket;
 
-  const int index = findNodeIndex(map, key, &bucket);
+  const int index = find_node_index(map, key, &bucket);
   if (index == -1) {
     return 0;
   }
@@ -145,7 +167,7 @@ char findNode(const Map *map, const MapNodeKey key, Node *dest) {
   return 1;
 }
 
-void free_node(Node node) {
+void map_free_node(Node node) {
   free(node.value.val);
 
   if (node.key.size > KEY_SIZE_BYTES) {
@@ -153,7 +175,7 @@ void free_node(Node node) {
   }
 }
 
-int findNodeIndex(const Map *map, const MapNodeKey key, List **dest) {
+int find_node_index(const Map *map, const MapNodeKey key, List **dest) {
   const int bucketIndex = (map->bucket_count - 1) & key.hash;
   List *bucket = map->buckets[bucketIndex];
 
@@ -167,8 +189,8 @@ int findNodeIndex(const Map *map, const MapNodeKey key, List **dest) {
     }
 
     const int size = key.size;
-    if (isKeysEqual(size <= KEY_SIZE_BYTES ? node.key.key : node.key.keyAdr,
-                    size <= KEY_SIZE_BYTES ? key.key : key.keyAdr, size)) {
+    if (are_keys_equal(size <= KEY_SIZE_BYTES ? node.key.key : node.key.keyAdr,
+                       size <= KEY_SIZE_BYTES ? key.key : key.keyAdr, size)) {
       *dest = bucket;
       return i;
     }
@@ -191,7 +213,18 @@ MapNodeKey convert_to_node_key(const MapEntry key) {
   return nodeKey;
 }
 
-char isKeysEqual(const char *key1, const char *key2, const size_t size) {
+MapEntry convert_to_map_entry(const MapNodeKey key) {
+  void *value = malloc(key.size);
+  if (key.size <= KEY_SIZE_BYTES) {
+    memcpy(value, key.key, key.size);
+  } else {
+    memcpy(value, key.keyAdr, key.size);
+  }
+
+  return (MapEntry){.size = key.size, .val = value};
+}
+
+char are_keys_equal(const char *key1, const char *key2, const size_t size) {
   for (int i = 0; i < size; i++) {
     if (key1[i] != key2[i]) {
       return 0;

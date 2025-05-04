@@ -1,6 +1,7 @@
 #ifndef MAP_H_
 #define MAP_H_
 
+#include "list.h"
 #include <stddef.h>
 
 typedef struct Map Map;
@@ -19,5 +20,6 @@ void map_get(const Map *, const MapEntry key, void *dest);
 char map_contains_key(const Map *, const MapEntry);
 char map_remove(Map *, const MapEntry key);
 int map_size(const Map *);
+List *map_get_keys(const Map *);
 
 #endif
