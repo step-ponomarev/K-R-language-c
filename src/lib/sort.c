@@ -1,6 +1,5 @@
 #include "sort.h"
 #include <stddef.h>
-#include <stdio.h>
 #include <stdlib.h>
 
 void swap(void *, const size_t, const size_t, const size_t);
