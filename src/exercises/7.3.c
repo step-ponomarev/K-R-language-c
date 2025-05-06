@@ -1,4 +1,3 @@
-#include <__stdarg_va_list.h>
 #include <stdarg.h>
 #include <stdio.h>
 
@@ -27,7 +26,7 @@ void minprintf(const char *fmt, ...) {
 }
 
 int main() {
-  minprintf("Hello, friend %d %s\n", 123, "omggg");
+  minprintf("Hello, friend %d %s\n", 12293, "omggg");
   minprintf("Hello, friend %d\n", 123141);
 
   return 0;
