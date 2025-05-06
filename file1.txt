@@ -1,0 +1,2 @@
+This file are equals to nether file
+But this line is not!
