@@ -21,5 +21,7 @@ extern MY_FILE *__myerr;
 // r,w, r+w
 MY_FILE *my_open(const char *, const char *);
 int my_getc(MY_FILE *);
+int my_putc(MY_FILE *, char);
+void my_ungetc(MY_FILE *, char);
 
 #endif
