@@ -12,6 +12,14 @@
 #define FILE_LIMIT 20
 #define BLOCK_SIZE 1024
 
+#define MY_O_RDONLY O_RDONLY
+#define MY_O_WRONLY O_WRONLY
+#define MY_O_RDWR O_RDWR
+#define MY_O_CREAT O_CREAT
+#define MY_O_TRUNC O_TRUNC
+#define MY_O_APPEND 0b01000
+#define MY_O_UNBUFF 0b10000
+
 // TODO: допилить отключение буфферизации для sdin/out/err
 
 typedef struct _buf {
@@ -30,9 +38,20 @@ struct MY_FILE {
 };
 
 static MY_FILE OPPENED_FILES[FILE_LIMIT] = {
-    {.fd = 0, .aid = 0, .rb = NULL, .wb = NULL, .fo = 0, .flags = O_RDONLY},
-    {.fd = 1, .aid = 1, .rb = NULL, .wb = NULL, .fo = 0, .flags = O_WRONLY},
-    {.fd = 2, .aid = 2, .rb = NULL, .wb = NULL, .fo = 0, .flags = O_WRONLY}};
+    {.fd = 0, .aid = 0, .rb = NULL, .wb = NULL, .fo = 0, .flags = MY_O_RDONLY},
+    {.fd = 1,
+     .aid = 1,
+     .rb = NULL,
+     .wb = NULL,
+     .fo = 0,
+     .flags = MY_O_WRONLY | MY_O_UNBUFF},
+    {.fd = 2,
+     .aid = 2,
+     .rb = NULL,
+     .wb = NULL,
+     .fo = 0,
+     .flags = MY_O_WRONLY | MY_O_UNBUFF}};
+
 static size_t CURR_AID = 3;
 
 MY_FILE *__myin = &OPPENED_FILES[0];
@@ -43,6 +62,8 @@ int parse_flags(const char *);
 int _fill_buff(const int, _buf *);
 int _flush_buff(const int, _buf *);
 int _prev_block(MY_FILE *);
+void _destroy_file(MY_FILE *);
+void _destroy_buf(_buf *);
 
 MY_FILE *my_open(const char *path, const char *fp) {
   const int flags = parse_flags(fp);
@@ -55,6 +76,10 @@ MY_FILE *my_open(const char *path, const char *fp) {
     return NULL;
   }
 
+  if (flags & MY_O_APPEND && (syscall(SYS_lseek, fd, 0, SEEK_END) < 0)) {
+    return NULL;
+  }
+
   OPPENED_FILES[CURR_AID] = (MY_FILE){.fd = fd,
                                       .aid = CURR_AID,
                                       .rb = NULL,
@@ -63,6 +88,25 @@ MY_FILE *my_open(const char *path, const char *fp) {
                                       .flags = flags};
 
   return &OPPENED_FILES[CURR_AID++];
+}
+
+int my_close(MY_FILE *file) {
+  if (file == NULL) {
+    return -1;
+  }
+
+  if (file->wb != NULL) {
+    my_flush(file);
+  }
+
+  _destroy_file(file);
+  for (int i = file->aid + 1; i < CURR_AID; i++) {
+    OPPENED_FILES[i - 1] = OPPENED_FILES[i];
+    OPPENED_FILES[i].aid = i - 1;
+  }
+  CURR_AID--;
+
+  return 0;
 }
 
 int my_getc(MY_FILE *file) {
@@ -90,46 +134,54 @@ int my_getc(MY_FILE *file) {
   return file->rb->p < 0 ? EOF : file->rb->buf[file->rb->p++];
 }
 
-// TODO: как понять когда флашить
-// TODO как понять, что есть что флоашить?
 int my_putc(MY_FILE *file, char ch) {
   if (file == NULL || !(file->flags & O_WRONLY) && !(file->flags & O_RDWR)) {
     return -1;
   }
 
+  const char unbuff = (file->flags & MY_O_UNBUFF) != 0;
   if (file->wb == NULL) {
     file->wb = malloc(sizeof(_buf));
-    file->wb->buf = malloc(sizeof(char) * BLOCK_SIZE);
-    file->wb->s = BLOCK_SIZE;
+    file->wb->s = unbuff ? 1 : BLOCK_SIZE;
+    file->wb->buf = malloc(sizeof(char) * file->wb->s);
     file->wb->p = 0;
   }
 
+  file->wb->buf[file->wb->p++] = ch;
   if (file->wb->p == file->wb->s && (_flush_buff(file->fd, file->wb) < 0)) {
     return -1;
   }
 
-  file->wb->buf[file->wb->p++] = ch;
+  return 0;
+}
+
+int my_ungetc(MY_FILE *file, char ch) {
+  if (file == NULL || file->rb == NULL || (file->flags & MY_O_UNBUFF)) {
+    return -1;
+  }
+
+  if (file->rb->p != 0) {
+    file->rb->buf[--(file->rb->p)] = ch;
+    return 0;
+  }
+
+  if ((file->fo != 0) && (_prev_block(file) < 0)) {
+    return -1;
+  }
+
+  file->rb->p = file->rb->s;
+  file->rb->buf[--(file->rb->p)] = ch;
 
   return 0;
 }
 
-int _flush_buff(const int fd, _buf *buf) {
-  if (buf == NULL) {
+int my_flush(MY_FILE *file) {
+  if (file == NULL ||
+      !(file->flags & MY_O_RDWR) && !(file->flags & MY_O_WRONLY)) {
     return -1;
   }
 
-  if (buf->p == 0) {
-    return 0;
-  }
-
-  if (syscall(SYS_write, fd, buf->buf, buf->p) < 0) {
-    return -1;
-  }
-
-  buf->s = BLOCK_SIZE;
-  buf->p = 0;
-
-  return 0;
+  return file->wb == NULL ? 0 : _flush_buff(file->fd, file->wb);
 }
 
 int _prev_block(MY_FILE *file) {
@@ -186,7 +238,25 @@ int _fill_buff(const int fd, _buf *buf) {
   return read_size;
 }
 
-// r/w/r+w/w+r/
+int _flush_buff(const int fd, _buf *buf) {
+  if (buf == NULL) {
+    return -1;
+  }
+
+  if (buf->p == 0) {
+    return 0;
+  }
+
+  if (syscall(SYS_write, fd, buf->buf, buf->p) < 0) {
+    return -1;
+  }
+
+  buf->p = 0;
+
+  return 0;
+}
+
+// r/w/r+w/w+r/a
 // returns -1 if combination is unsupported
 int parse_flags(const char *flags) {
   int fl = 0;
@@ -197,24 +267,51 @@ int parse_flags(const char *flags) {
     }
 
     if (*flags == 'w') {
-      fl |= O_RDWR | O_CREAT;
+      fl |= MY_O_RDWR | MY_O_CREAT | MY_O_TRUNC;
     }
 
     if (*flags == 'r') {
-      fl |= O_RDONLY;
+      fl |= MY_O_RDONLY;
     }
+
+    if (*flags == 'a') {
+      fl |= MY_O_APPEND | MY_O_RDWR;
+    }
+
     flags++;
   }
 
   return fl;
 }
 
-void atexitFn() {}
+void _destroy_file(MY_FILE *file) {
+  if (file == NULL) {
+    return;
+  }
+
+  _destroy_buf(file->rb);
+  _destroy_buf(file->wb);
+}
+
+void _destroy_buf(_buf *buf) {
+  if (buf == NULL) {
+    return;
+  }
+
+  if (buf->buf != NULL) {
+    free(buf->buf);
+  }
+
+  free(buf);
+}
 
 int main() {
-  atexit(&atexitFn);
-  my_putc(myout, 'h');
-  my_putc(myout, '2');
+  MY_FILE *f = my_open("test.txt", "a");
+
+  my_putc(f, '3');
+  my_putc(f, '\n');
+
+  my_close(f);
 
   return 0;
 }
