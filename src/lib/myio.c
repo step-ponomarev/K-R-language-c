@@ -58,7 +58,7 @@ MY_FILE *__myin = &OPPENED_FILES[0];
 MY_FILE *__myout = &OPPENED_FILES[1];
 MY_FILE *__myerr = &OPPENED_FILES[2];
 
-int parse_flags(const char *);
+int _parse_flags(const char *);
 int _fill_buff(const int, _buf *);
 int _flush_buff(const int, _buf *);
 int _prev_block(MY_FILE *);
@@ -66,7 +66,7 @@ void _destroy_file(MY_FILE *);
 void _destroy_buf(_buf *);
 
 MY_FILE *my_open(const char *path, const char *fp) {
-  const int flags = parse_flags(fp);
+  const int flags = _parse_flags(fp);
   if (flags == -1) {
     return NULL;
   }
@@ -258,7 +258,7 @@ int _flush_buff(const int fd, _buf *buf) {
 
 // r/w/r+w/w+r/a
 // returns -1 if combination is unsupported
-int parse_flags(const char *flags) {
+int _parse_flags(const char *flags) {
   int fl = 0;
   while (*flags != '\0') {
     if (*flags == '+') {
@@ -306,7 +306,7 @@ void _destroy_buf(_buf *buf) {
 }
 
 int main() {
-  MY_FILE *f = my_open("test.txt", "a");
+  MY_FILE *f = my_open("test.txt", "a:w");
 
   my_putc(f, '3');
   my_putc(f, '\n');
