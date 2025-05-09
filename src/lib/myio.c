@@ -226,9 +226,6 @@ int _fill_buff(const int fd, _buf *buf) {
   if (buf->buf == NULL) {
     // TODO: malloc -> brk
     buf->buf = malloc(byte_size);
-  } else {
-    // TODO: malloc -> brk
-    buf->buf = realloc(buf->buf, byte_size);
   }
   memcpy(buf->buf, buffer, read_size);
 
