@@ -1,14 +1,20 @@
 #include "mydir.h"
 #include "unistd.h"
 #include <fcntl.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <sys/stat.h>
 #include <sys/syscall.h>
 
+typedef struct _derent_buf {
+  Dirent d;
+  char buf[1024];
+  int bytes;
+  int offset;
+} _dirent_buf;
+
 struct MY_DIR {
   int fd;
-  Dirent d;
+  _dirent_buf *dirent;
 };
 
 MY_DIR *my_opendir(const char *path) {
@@ -40,22 +46,29 @@ Dirent *my_readdir(MY_DIR *dir) {
     return NULL;
   }
 
-  long esleep = 0;
-  char buf[1024];
-  int bytes = syscall(SYS_getdirentries64, dir->fd, buf, sizeof(buf), &esleep);
-  if (bytes < 0) {
-    printf("ERRROR\n");
+  if (dir->dirent == NULL) {
+    dir->dirent = malloc(sizeof(_dirent_buf));
+  }
+
+  if (dir->dirent->bytes <= 0) {
+    long esleep = 0;
+    dir->dirent->bytes = syscall(SYS_getdirentries64, dir->fd, dir->dirent->buf,
+                                 sizeof(dir->dirent->buf), &esleep);
+  }
+
+  _dirent_buf *dirent = dir->dirent;
+  if (dirent->bytes <= 0) {
     return NULL;
   }
 
-  int offset = 0;
-  Dirent *dirent;
-  while ((dirent = (Dirent *)(buf + offset))->d_reclen > 1) {
-    printf("Name: %.*s\n", dirent->d_namlen, dirent->d_name);
-    offset += dirent->d_reclen;
+  if ((dirent->d = *((Dirent *)(dirent->buf + dirent->offset))).d_reclen <= 1) {
+    dir->dirent = NULL;
+    free(dirent); // if end go to start
+    return NULL;
   }
+  dirent->offset += dirent->d.d_reclen;
 
-  return NULL;
+  return &dirent->d;
 }
 
 void my_closedir(MY_DIR *dir) {
@@ -64,12 +77,8 @@ void my_closedir(MY_DIR *dir) {
   }
 
   syscall(SYS_close, dir->fd);
+  if (dir->dirent != NULL) {
+    free(dir->dirent);
+  }
   free(dir);
-}
-
-int main(const int argc, const char *argv[]) {
-  MY_DIR *not_null_dir = my_opendir("src");
-  my_readdir(not_null_dir);
-
-  return 0;
 }
